@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.46 build 20240104201356 
-                                                                                               Thu Jun 12 19:40:46 2025
+                                                                                               Thu Jun 12 20:34:37 2025
 
 Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1 
      1                           	processor	18F57Q84
@@ -196,7 +196,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
    182 ;; Auto vars:     Size  Location     Type
    183 ;;		None
    184 ;; Return value:  Size  Location     Type
-   185 ;;                  2  106[None  ] int 
+   185 ;;                  2  228[None  ] int 
    186 ;; Registers used:
    187 ;;		wreg, status,2, status,0, cstack
    188 ;; Tracked objects:
@@ -240,8 +240,8 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
    211   003864                     
    212                           ;main.c: 43:     SYSTEM_Initialize();
    213   003864  EC16  F01C         	call	_SYSTEM_Initialize	;wreg free
-   214   003868                     l107:
-   215   003868  EF34  F01C         	goto	l107
+   214   003868                     l229:
+   215   003868  EF34  F01C         	goto	l229
    216   00386C  EFFE  F0FF         	goto	start
    217   003870                     __end_of_main:
    218                           	callstack 0
@@ -1803,30 +1803,30 @@ SFR                  0      0       0     200        0.0%
 
 
 Microchip Technology PIC18 Macro Assembler V2.46 build 20240104201356 
-Symbol Table                                                                                   Thu Jun 12 19:40:46 2025
+Symbol Table                                                                                   Thu Jun 12 20:34:37 2025
 
                                       l35 3808                                        l45 3862  
                                       l71 3846                                        l58 3854  
                                       l83 3838                                       l100 382A  
-                                     l107 3868                                       l108 3868  
-                                     l229 37C8                                       l930 3734  
-                                     l940 3742                                       l932 3736  
-                                     l926 380A                                       l950 3768  
-                                     l942 3744                                       l934 3738  
-                                     l960 3776                                       l952 376A  
-                                     l944 3746                                       l936 373A  
-                                     l928 3702                                       l962 3778  
-                                     l954 376C                                       l946 3748  
-                                     l938 3740                                       l964 377A  
-                                     l956 376E                                       l948 374E  
-                                     l966 377C                                       l958 3774  
-                                     l968 3782                ??_INT0_SetInterruptHandler 050D  
-                                    l1000 3856                                      l1002 3848  
-                                    l1010 37E0                                      l1004 383A  
-                                    l1012 37E2                                      l1020 3834  
-                                    l1014 37F4                                      l1006 37CA  
-                                    l1022 3864                                      l1016 37F6  
-                                    l1008 37D0                                      l1018 382C  
+                                     l230 3868                                       l219 37C8  
+                                     l229 3868                                       l931 3702  
+                                     l941 3740                                       l933 3734  
+                                     l951 374E                                       l943 3742  
+                                     l935 3736                                       l929 380A  
+                                     l961 3774                                       l953 3768  
+                                     l945 3744                                       l937 3738  
+                                     l971 3782                                       l963 3776  
+                                     l955 376A                                       l947 3746  
+                                     l939 373A                                       l965 3778  
+                                     l957 376C                                       l949 3748  
+                                     l967 377A                                       l959 376E  
+                                     l969 377C                ??_INT0_SetInterruptHandler 050D  
+                                    l1003 3856                                      l1011 37D0  
+                                    l1005 3848                                      l1013 37E0  
+                                    l1021 382C                                      l1007 383A  
+                                    l1015 37E2                                      l1023 3834  
+                                    l1017 37F4                                      l1009 37CA  
+                                    l1025 3864                                      l1019 37F6  
                                     _LATA 04BE                                      _LATB 04BF  
                                     _LATC 04C0                                      _LATD 04C1  
                                     _LATE 04C2                                      _LATF 04C3  

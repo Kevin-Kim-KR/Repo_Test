@@ -49,6 +49,26 @@
 #define PULL_UP_ENABLED      1
 #define PULL_UP_DISABLED     0
 
+// get/set RB3 aliases
+#define IO_RB3_TRIS                 TRISBbits.TRISB3
+#define IO_RB3_LAT                  LATBbits.LATB3
+#define IO_RB3_PORT                 PORTBbits.RB3
+#define IO_RB3_WPU                  WPUBbits.WPUB3
+#define IO_RB3_OD                   ODCONBbits.ODCB3
+#define IO_RB3_ANS                  ANSELBbits.ANSELB3
+#define IO_RB3_SetHigh()            do { LATBbits.LATB3 = 1; } while(0)
+#define IO_RB3_SetLow()             do { LATBbits.LATB3 = 0; } while(0)
+#define IO_RB3_Toggle()             do { LATBbits.LATB3 = ~LATBbits.LATB3; } while(0)
+#define IO_RB3_GetValue()           PORTBbits.RB3
+#define IO_RB3_SetDigitalInput()    do { TRISBbits.TRISB3 = 1; } while(0)
+#define IO_RB3_SetDigitalOutput()   do { TRISBbits.TRISB3 = 0; } while(0)
+#define IO_RB3_SetPullup()          do { WPUBbits.WPUB3 = 1; } while(0)
+#define IO_RB3_ResetPullup()        do { WPUBbits.WPUB3 = 0; } while(0)
+#define IO_RB3_SetPushPull()        do { ODCONBbits.ODCB3 = 0; } while(0)
+#define IO_RB3_SetOpenDrain()       do { ODCONBbits.ODCB3 = 1; } while(0)
+#define IO_RB3_SetAnalogMode()      do { ANSELBbits.ANSELB3 = 1; } while(0)
+#define IO_RB3_SetDigitalMode()     do { ANSELBbits.ANSELB3 = 0; } while(0)
+
 /**
  * @ingroup  pinsdriver
  * @brief GPIO and peripheral I/O initialization

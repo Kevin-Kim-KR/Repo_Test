@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=Git_Test.X
+PROJECTNAME=Repo_Test
 
 # Active Configuration
 DEFAULTCONF=default

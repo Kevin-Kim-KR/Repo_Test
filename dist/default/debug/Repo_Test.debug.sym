@@ -362,8 +362,8 @@ smallconst 3700 3701 SMALLCONST 3700 0
 nvCOMRAM 501 50C COMRAM 501 1
 text2 3702 3875 CODE 3702 0
 %locals
-dist/default/debug\Git_Test.X.debug.o
-C:\Users\USER\AppData\Local\Temp\xcAs12hg.\driver_tmp_1.s
+dist/default/debug\Repo_Test.debug.o
+C:\Users\USER\AppData\Local\Temp\xcAs12as.\driver_tmp_1.s
 12498 3870 0 CODE 0
 12500 3870 0 CODE 0
 12503 3870 0 CODE 0

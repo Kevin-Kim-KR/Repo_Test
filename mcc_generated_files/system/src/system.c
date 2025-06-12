@@ -42,6 +42,7 @@ void SYSTEM_Initialize(void)
 {
     CLOCK_Initialize();
     PIN_MANAGER_Initialize();
+    CAN1_Initialize();
     INTERRUPT_Initialize();
 }
 

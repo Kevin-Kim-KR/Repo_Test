@@ -39295,6 +39295,10 @@ void INT2_DefaultInterruptHandler(void);
 void SYSTEM_Initialize(void);
 # 35 "main.c" 2
 
+# 1 "./added.h" 1
+# 15 "./added.h"
+void added_Function(void);
+# 36 "main.c" 2
 
 
 

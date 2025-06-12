@@ -70,7 +70,7 @@ void PIN_MANAGER_Initialize(void)
     ANSELx registers
     */
     ANSELA = 0xFF;
-    ANSELB = 0xFF;
+    ANSELB = 0xF7;
     ANSELC = 0xFF;
     ANSELD = 0xFF;
     ANSELE = 0x7;
@@ -117,6 +117,7 @@ void PIN_MANAGER_Initialize(void)
     /**
     PPS registers
     */
+    CANRXPPS = 0xB; //RB3->CAN1:CANRX;
 
    /**
     IOCx registers 

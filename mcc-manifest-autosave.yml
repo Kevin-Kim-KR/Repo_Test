@@ -2,7 +2,7 @@
 
 manifest_file_version: 1.0.0
 project: Git_Test
-creation_date: 2025-06-12T19:31:34.811+09:00[Asia/Seoul]
+creation_date: 2025-06-12T20:35:08.393+09:00[Asia/Seoul]
 operating_system: Windows 10
 mcc_mode: IDE
 mcc_mode_version: v6.20
@@ -17,10 +17,12 @@ mcc_content_registries: https://registry.npmjs.org/
 device_library: {library_class: com.microchip.mcc.melody.Library, name: Melody, version: 2.9.1}
 packs: {name: PIC18F-Q_DFP, version: 1.28.451}
 modules:
+- {name: '@mchp-mcc/can-fd-driver', type: MELODY, version: 1.2.3}
 - {name: '@mchp-mcc/main-manager', type: MELODY, version: 3.1.2}
 - {name: '@mchp-mcc/pic-8bit', type: MELODY, version: 5.29.1}
 - {name: '@mchp-mcc/pic18-configuration-bits-v6', type: MELODY, version: 1.0.4}
 - {name: '@mchp-mcc/pic18-pin-manager', type: MELODY, version: 3.7.1}
 - {name: '@mchp-mcc/pin-content-processor', type: MELODY, version: 3.10.0}
+- {name: '@mchp-mcc/scf-pic8-can-v1', type: MELODY, version: 1.0.0}
 - {name: '@mchp-mcc/scf-pic8-interrupt-v1', type: MELODY, version: 5.2.11}
 - {name: '@mchp-mcc/scf-pic8-osc-v1', type: MELODY, version: 4.4.0}

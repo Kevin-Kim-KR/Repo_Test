@@ -3,6 +3,38 @@
 [d edition pro ]
 [d chip 18F57Q84 ]
 [d frameptr 1249 ]
+"84 C:\Users\USER\MPLABXProjects\Test\Repo_Test\mcc_generated_files/can/src/can1.c
+[e E23392 CAN_OP_MODES `uc
+CAN_NORMAL_FD_MODE 0
+CAN_DISABLE_MODE 1
+CAN_INTERNAL_LOOPBACK_MODE 2
+CAN_LISTEN_ONLY_MODE 3
+CAN_CONFIGURATION_MODE 4
+CAN_EXTERNAL_LOOPBACK_MODE 5
+CAN_NORMAL_2_0_MODE 6
+CAN_RESTRICTED_OPERATION_MODE 7
+]
+[e E23401 CAN_OP_MODE_STATUS `uc
+CAN_OP_MODE_REQUEST_SUCCESS 0
+CAN_OP_MODE_REQUEST_FAIL 1
+CAN_OP_MODE_SYS_ERROR_OCCURED 2
+]
+[e E23361 CAN_TX_FIFO_CHANNELS `uc
+CAN_TX_FIFO_MAX 0
+]
+[e E23387 CAN_TX_MSG_REQUEST_STATUS `uc
+CAN_TX_MSG_REQUEST_SUCCESS 0
+CAN_TX_MSG_REQUEST_DLC_EXCEED_ERROR 1
+CAN_TX_MSG_REQUEST_BRS_ERROR 2
+CAN_TX_MSG_REQUEST_FIFO_FULL 3
+]
+[e E23405 CAN_TX_FIFO_STATUS `uc
+CAN_TX_FIFO_FULL 0
+CAN_TX_FIFO_AVAILABLE 1
+]
+[e E23363 CAN_RX_FIFO_CHANNELS `uc
+CAN_RX_FIFO_MAX 0
+]
 "4 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\fleq.c
 [v ___fleq __fleq `(b  1 e 0 0 ]
 "62 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\float.c
@@ -29,32 +61,86 @@
 [v ___omul __omul `(uo  1 e 8 0 ]
 "41 C:\Users\USER\MPLABXProjects\Test\Repo_Test\main.c
 [v _main main `(i  1 e 2 0 ]
+"129 C:\Users\USER\MPLABXProjects\Test\Repo_Test\mcc_generated_files/can/src/can1.c
+[v _CAN1_BitRateConfiguration CAN1_BitRateConfiguration `(v  1 s 1 CAN1_BitRateConfiguration ]
+"158
+[v _CAN1_Initialize CAN1_Initialize `(v  1 e 1 0 ]
+"191
+[v _CAN1_Deinitialize CAN1_Deinitialize `(v  1 e 1 0 ]
+"221
+[v _CAN1_OperationModeSet CAN1_OperationModeSet `(E23401  1 e 1 0 ]
+"249
+[v _CAN1_OperationModeGet CAN1_OperationModeGet `(E23392  1 e 1 0 ]
+"254
+[v _CAN1_IsBusOff CAN1_IsBusOff `(a  1 e 1 0 ]
+"259
+[v _CAN1_Sleep CAN1_Sleep `(v  1 e 1 0 ]
+"271
+[v _CAN1_InvalidMessageCallbackRegister CAN1_InvalidMessageCallbackRegister `(v  1 e 1 0 ]
+"279
+[v _CAN1_BusWakeUpActivityCallbackRegister CAN1_BusWakeUpActivityCallbackRegister `(v  1 e 1 0 ]
+"287
+[v _CAN1_BusErrorCallbackRegister CAN1_BusErrorCallbackRegister `(v  1 e 1 0 ]
+"295
+[v _CAN1_ModeChangeCallbackRegister CAN1_ModeChangeCallbackRegister `(v  1 e 1 0 ]
+"303
+[v _CAN1_SystemErrorCallbackRegister CAN1_SystemErrorCallbackRegister `(v  1 e 1 0 ]
+"313
+[v _CAN1_InformationISR CAN1_InformationISR `(v  1 e 1 0 ]
+"329
+[v _CAN1_Tasks CAN1_Tasks `(v  1 e 1 0 ]
 "39 C:\Users\USER\MPLABXProjects\Test\Repo_Test\mcc_generated_files/system/src/clock.c
 [v _CLOCK_Initialize CLOCK_Initialize `(v  1 e 1 0 ]
 "42 C:\Users\USER\MPLABXProjects\Test\Repo_Test\mcc_generated_files/system/src/interrupt.c
 [v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
-"83
+"80
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
+"102
 [v _INT0_CallBack INT0_CallBack `(v  1 e 1 0 ]
-"92
+"111
 [v _INT0_SetInterruptHandler INT0_SetInterruptHandler `(v  1 e 1 0 ]
-"96
+"115
 [v _INT0_DefaultInterruptHandler INT0_DefaultInterruptHandler `(v  1 e 1 0 ]
-"109
+"128
 [v _INT1_CallBack INT1_CallBack `(v  1 e 1 0 ]
-"118
+"137
 [v _INT1_SetInterruptHandler INT1_SetInterruptHandler `(v  1 e 1 0 ]
-"122
+"141
 [v _INT1_DefaultInterruptHandler INT1_DefaultInterruptHandler `(v  1 e 1 0 ]
-"135
+"154
 [v _INT2_CallBack INT2_CallBack `(v  1 e 1 0 ]
-"144
+"163
 [v _INT2_SetInterruptHandler INT2_SetInterruptHandler `(v  1 e 1 0 ]
-"148
+"167
 [v _INT2_DefaultInterruptHandler INT2_DefaultInterruptHandler `(v  1 e 1 0 ]
 "38 C:\Users\USER\MPLABXProjects\Test\Repo_Test\mcc_generated_files/system/src/pins.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 "41 C:\Users\USER\MPLABXProjects\Test\Repo_Test\mcc_generated_files/system/src/system.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+[s S146 . 1 `uc 1 SWIE 1 0 :1:0 
+`uc 1 HLVDIE 1 0 :1:1 
+`uc 1 OSFIE 1 0 :1:2 
+`uc 1 CSWIE 1 0 :1:3 
+`uc 1 TU16AIE 1 0 :1:4 
+`uc 1 CLC1IE 1 0 :1:5 
+`uc 1 CANIE 1 0 :1:6 
+`uc 1 IOCIE 1 0 :1:7 
+]
+"2200 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h
+[u S155 . 1 `S146 1 . 1 0 ]
+[v _PIE0bits PIE0bits `VES155  1 e 1 @1182 ]
+[s S167 . 1 `uc 1 SWIF 1 0 :1:0 
+`uc 1 HLVDIF 1 0 :1:1 
+`uc 1 OSFIF 1 0 :1:2 
+`uc 1 CSWIF 1 0 :1:3 
+`uc 1 TU16AIF 1 0 :1:4 
+`uc 1 CLC1IF 1 0 :1:5 
+`uc 1 CANIF 1 0 :1:6 
+`uc 1 IOCIF 1 0 :1:7 
+]
+"3185
+[u S176 . 1 `S167 1 . 1 0 ]
+[v _PIR0bits PIR0bits `VES176  1 e 1 @1198 ]
 [s S53 . 1 `uc 1 INT0IF 1 0 :1:0 
 `uc 1 ZCDIF 1 0 :1:1 
 `uc 1 ADIF 1 0 :1:2 
@@ -64,7 +150,7 @@
 `uc 1 SMT1PRAIF 1 0 :1:6 
 `uc 1 SMT1PWAIF 1 0 :1:7 
 ]
-"3247 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h
+"3247
 [u S62 . 1 `S53 1 . 1 0 ]
 [v _PIR1bits PIR1bits `VES62  1 e 1 @1199 ]
 [s S84 . 1 `uc 1 INT1IF 1 0 :1:0 
@@ -141,6 +227,129 @@
 [v _OSCFRQ OSCFRQ `VEuc  1 e 1 @177 ]
 "5775
 [v _OSCEN OSCEN `VEuc  1 e 1 @179 ]
+"8943
+[v _C1CONL C1CONL `VEuc  1 e 1 @256 ]
+"9013
+[v _C1CONH C1CONH `VEuc  1 e 1 @257 ]
+[s S638 . 1 `uc 1 WAKFIL 1 0 :1:0 
+`uc 1 WFT 1 0 :2:1 
+`uc 1 BUSY 1 0 :1:3 
+`uc 1 BRSDIS 1 0 :1:4 
+`uc 1 SIDL 1 0 :1:5 
+`uc 1 FRZ 1 0 :1:6 
+`uc 1 ON 1 0 :1:7 
+]
+"9034
+[s S646 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 WFT0 1 0 :1:1 
+`uc 1 WFT1 1 0 :1:2 
+]
+[u S650 . 1 `S638 1 . 1 0 `S646 1 . 1 0 ]
+[v _C1CONHbits C1CONHbits `VES650  1 e 1 @257 ]
+"9084
+[v _C1CONU C1CONU `VEuc  1 e 1 @258 ]
+[s S670 . 1 `uc 1 RTXAT 1 0 :1:0 
+`uc 1 ESIGM 1 0 :1:1 
+`uc 1 SERR2LOM 1 0 :1:2 
+`uc 1 STEF 1 0 :1:3 
+`uc 1 TXQEN 1 0 :1:4 
+`uc 1 OPMOD 1 0 :3:5 
+]
+"9105
+[s S677 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 OPMOD0 1 0 :1:5 
+`uc 1 OPMOD1 1 0 :1:6 
+`uc 1 OPMOD2 1 0 :1:7 
+]
+[u S682 . 1 `S670 1 . 1 0 `S677 1 . 1 0 ]
+[v _C1CONUbits C1CONUbits `VES682  1 e 1 @258 ]
+"9155
+[v _C1CONT C1CONT `VEuc  1 e 1 @259 ]
+[s S698 . 1 `uc 1 REQOP 1 0 :3:0 
+`uc 1 ABAT 1 0 :1:3 
+`uc 1 TXBWS 1 0 :4:4 
+]
+"9177
+[s S702 . 1 `uc 1 REQOP0 1 0 :1:0 
+`uc 1 REQOP1 1 0 :1:1 
+`uc 1 REQOP2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 TXBWS0 1 0 :1:4 
+`uc 1 TXBWS1 1 0 :1:5 
+`uc 1 TXBWS2 1 0 :1:6 
+`uc 1 TXBWS3 1 0 :1:7 
+]
+[u S711 . 1 `S698 1 . 1 0 `S702 1 . 1 0 ]
+[v _C1CONTbits C1CONTbits `VES711  1 e 1 @259 ]
+"9232
+[v _C1NBTCFGL C1NBTCFGL `VEuc  1 e 1 @260 ]
+"9296
+[v _C1NBTCFGH C1NBTCFGH `VEuc  1 e 1 @261 ]
+"9360
+[v _C1NBTCFGU C1NBTCFGU `VEuc  1 e 1 @262 ]
+"9430
+[v _C1NBTCFGT C1NBTCFGT `VEuc  1 e 1 @263 ]
+"9500
+[v _C1DBTCFGL C1DBTCFGL `VEuc  1 e 1 @264 ]
+"9546
+[v _C1DBTCFGH C1DBTCFGH `VEuc  1 e 1 @265 ]
+"9592
+[v _C1DBTCFGU C1DBTCFGU `VEuc  1 e 1 @266 ]
+"9644
+[v _C1DBTCFGT C1DBTCFGT `VEuc  1 e 1 @267 ]
+"9714
+[v _C1TDCL C1TDCL `VEuc  1 e 1 @268 ]
+"9772
+[v _C1TDCH C1TDCH `VEuc  1 e 1 @269 ]
+"9836
+[v _C1TDCU C1TDCU `VEuc  1 e 1 @270 ]
+"9870
+[v _C1TDCT C1TDCT `VEuc  1 e 1 @271 ]
+[s S825 . 1 `uc 1 TXIF 1 0 :1:0 
+`uc 1 RXIF 1 0 :1:1 
+`uc 1 TBCIF 1 0 :1:2 
+`uc 1 MODIF 1 0 :1:3 
+`uc 1 TEFIF 1 0 :1:4 
+]
+"10420
+[u S831 . 1 `S825 1 . 1 0 ]
+[v _C1INTLbits C1INTLbits `VES831  1 e 1 @284 ]
+[s S728 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 TXATIF 1 0 :1:2 
+`uc 1 RXOVIF 1 0 :1:3 
+`uc 1 SERRIF 1 0 :1:4 
+`uc 1 CERRIF 1 0 :1:5 
+`uc 1 WAKIF 1 0 :1:6 
+`uc 1 IVMIF 1 0 :1:7 
+]
+"10466
+[u S736 . 1 `S728 1 . 1 0 ]
+[v _C1INTHbits C1INTHbits `VES736  1 e 1 @285 ]
+[s S764 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 TXATIE 1 0 :1:2 
+`uc 1 RXOVIE 1 0 :1:3 
+`uc 1 SERRIE 1 0 :1:4 
+`uc 1 CERRIE 1 0 :1:5 
+`uc 1 WAKIE 1 0 :1:6 
+`uc 1 IVMIE 1 0 :1:7 
+]
+"10561
+[u S772 . 1 `S764 1 . 1 0 ]
+[v _C1INTTbits C1INTTbits `VES772  1 e 1 @287 ]
+[s S747 . 1 `uc 1 EWARN 1 0 :1:0 
+`uc 1 RXWARN 1 0 :1:1 
+`uc 1 TXWARN 1 0 :1:2 
+`uc 1 RXBP 1 0 :1:3 
+`uc 1 TXBP 1 0 :1:4 
+`uc 1 TXBO 1 0 :1:5 
+]
+"12178
+[u S754 . 1 `S747 1 . 1 0 ]
+[v _C1TRECUbits C1TRECUbits `VES754  1 e 1 @310 ]
+"13518
+[v _C1TXQCONL C1TXQCONL `VEuc  1 e 1 @336 ]
+"25915
+[v _CANRXPPS CANRXPPS `VEuc  1 e 1 @573 ]
 "30554
 [v _RC4I2C RC4I2C `VEuc  1 e 1 @646 ]
 "30686
@@ -235,6 +444,16 @@
 [v _INLVLF INLVLF `VEuc  1 e 1 @1068 ]
 "65172
 [v _FSCMCON FSCMCON `VEuc  1 e 1 @1112 ]
+"114 C:\Users\USER\MPLABXProjects\Test\Repo_Test\mcc_generated_files/can/src/can1.c
+[v _CAN1_InvalidMessageHandler CAN1_InvalidMessageHandler `*.38(v  1 s 3 CAN1_InvalidMessageHandler ]
+"115
+[v _CAN1_BusWakeUpActivityHandler CAN1_BusWakeUpActivityHandler `*.38(v  1 s 3 CAN1_BusWakeUpActivityHandler ]
+"116
+[v _CAN1_BusErrorHandler CAN1_BusErrorHandler `*.38(v  1 s 3 CAN1_BusErrorHandler ]
+"117
+[v _CAN1_ModeChangeHandler CAN1_ModeChangeHandler `*.38(v  1 s 3 CAN1_ModeChangeHandler ]
+"118
+[v _CAN1_SystemErrorHandler CAN1_SystemErrorHandler `*.38(v  1 s 3 CAN1_SystemErrorHandler ]
 "38 C:\Users\USER\MPLABXProjects\Test\Repo_Test\mcc_generated_files/system/src/interrupt.c
 [v _INT0_InterruptHandler INT0_InterruptHandler `*.38(v  1 e 3 0 ]
 "39
@@ -249,38 +468,75 @@
 "41 C:\Users\USER\MPLABXProjects\Test\Repo_Test\mcc_generated_files/system/src/system.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 {
-"46
+"47
 } 0
 "38 C:\Users\USER\MPLABXProjects\Test\Repo_Test\mcc_generated_files/system/src/pins.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 {
-"138
+"139
 } 0
 "42 C:\Users\USER\MPLABXProjects\Test\Repo_Test\mcc_generated_files/system/src/interrupt.c
 [v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
 {
 "71
 } 0
-"144
+"163
 [v _INT2_SetInterruptHandler INT2_SetInterruptHandler `(v  1 e 1 0 ]
 {
 [v INT2_SetInterruptHandler@InterruptHandler InterruptHandler `*.38(v  1 p 3 0 ]
-"146
+"165
 } 0
-"118
+"137
 [v _INT1_SetInterruptHandler INT1_SetInterruptHandler `(v  1 e 1 0 ]
 {
 [v INT1_SetInterruptHandler@InterruptHandler InterruptHandler `*.38(v  1 p 3 0 ]
-"120
+"139
 } 0
-"92
+"111
 [v _INT0_SetInterruptHandler INT0_SetInterruptHandler `(v  1 e 1 0 ]
 {
 [v INT0_SetInterruptHandler@InterruptHandler InterruptHandler `*.38(v  1 p 3 0 ]
-"94
+"113
 } 0
 "39 C:\Users\USER\MPLABXProjects\Test\Repo_Test\mcc_generated_files/system/src/clock.c
 [v _CLOCK_Initialize CLOCK_Initialize `(v  1 e 1 0 ]
 {
 "64
+} 0
+"158 C:\Users\USER\MPLABXProjects\Test\Repo_Test\mcc_generated_files/can/src/can1.c
+[v _CAN1_Initialize CAN1_Initialize `(v  1 e 1 0 ]
+{
+"189
+} 0
+"221
+[v _CAN1_OperationModeSet CAN1_OperationModeSet `(E23401  1 e 1 0 ]
+{
+[v CAN1_OperationModeSet@requestMode requestMode `CE23392  1 a 1 wreg ]
+"223
+[v CAN1_OperationModeSet@status status `E23401  1 a 1 0 ]
+"221
+[v CAN1_OperationModeSet@requestMode requestMode `CE23392  1 a 1 wreg ]
+"223
+[v CAN1_OperationModeSet@requestMode requestMode `CE23392  1 a 1 1 ]
+"247
+} 0
+"249
+[v _CAN1_OperationModeGet CAN1_OperationModeGet `(E23392  1 e 1 0 ]
+{
+"252
+} 0
+"129
+[v _CAN1_BitRateConfiguration CAN1_BitRateConfiguration `(v  1 s 1 CAN1_BitRateConfiguration ]
+{
+"155
+} 0
+"80 C:\Users\USER\MPLABXProjects\Test\Repo_Test\mcc_generated_files/system/src/interrupt.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
+{
+"91
+} 0
+"313 C:\Users\USER\MPLABXProjects\Test\Repo_Test\mcc_generated_files/can/src/can1.c
+[v _CAN1_InformationISR CAN1_InformationISR `(v  1 e 1 0 ]
+{
+"327
 } 0

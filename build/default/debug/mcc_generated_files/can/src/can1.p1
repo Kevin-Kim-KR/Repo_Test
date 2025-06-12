@@ -1,98 +1,313 @@
 Version 4.0 HI-TECH Software Intermediate Code
-[v F23400 `(v ~T0 @X0 0 tf ]
-[v F23402 `(v ~T0 @X0 0 tf ]
-[v F23404 `(v ~T0 @X0 0 tf ]
-"5191 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h
-[s S3214 :1 `uc 1 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S3214 . INT0EDG INT1EDG INT2EDG . IPEN GIEL GIE ]
-"5200
-[s S3215 :7 `uc 1 :1 `uc 1 ]
-[n S3215 . . GIEH ]
-"5190
-[u S3213 `S3214 1 `S3215 1 ]
-[n S3213 . . . ]
-"5205
-[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h: 5205: 
-[v _INTCON0bits `VS3213 ~T0 @X0 0 e@1238 ]
-"3236
-[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h: 3236:         unsigned WDTTMR4 :1;
-[s S3147 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S3147 . INT0IF ZCDIF ADIF ACTIF C1IF SMT1IF SMT1PRAIF SMT1PWAIF ]
-"3235
-[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h: 3235:         unsigned WDTTMR3 :1;
-[u S3146 `S3147 1 ]
-[n S3146 . . ]
-"3247
-[v _PIR1bits `VS3146 ~T0 @X0 0 e@1199 ]
-[v F6 `(v ~T0 @X0 0 tf ]
-"236 mcc_generated_files/system/src/../../system/../system/interrupt.h
-[v _INT0_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F6 ]
-"255
-[v _INT0_DefaultInterruptHandler `(v ~T0 @X0 0 ef ]
-"3554 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h
-[s S3158 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S3158 . INT1IF CLC2IF CWG1IF NCO1IF DMA2SCNTIF DMA2DCNTIF DMA2ORIF DMA2AIF ]
-"3553
-[u S3157 `S3158 1 ]
-[n S3157 . . ]
-"3565
-[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h: 3565: 
-[v _PIR6bits `VS3157 ~T0 @X0 0 e@1204 ]
-[v F15 `(v ~T0 @X0 0 tf ]
-"282 mcc_generated_files/system/src/../../system/../system/interrupt.h
-[v _INT1_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F15 ]
-"301
-[v _INT1_DefaultInterruptHandler `(v ~T0 @X0 0 ef ]
-"3792 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h
-[s S3166 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S3166 . INT2IF CLC5IF CWG2IF NCO2IF DMA3SCNTIF DMA3DCNTIF DMA3ORIF DMA3AIF ]
-"3791
-[u S3165 `S3166 1 ]
-[n S3165 . . ]
-"3803
-[v _PIR10bits `VS3165 ~T0 @X0 0 e@1208 ]
-[v F24 `(v ~T0 @X0 0 tf ]
-"328 mcc_generated_files/system/src/../../system/../system/interrupt.h
-[v _INT2_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F24 ]
-"347
-[v _INT2_DefaultInterruptHandler `(v ~T0 @X0 0 ef ]
-[t ~ __interrupt . k ]
-[t T1 __interrupt ]
-"2189 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h
-[s S3112 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S3112 . SWIE HLVDIE OSFIE CSWIE TU16AIE CLC1IE CANIE IOCIE ]
+[v F23431 `(v ~T0 @X0 0 tf ]
+[v F23433 `(v ~T0 @X0 0 tf ]
+"84 mcc_generated_files/can/src/can1.c
+[; ;mcc_generated_files/can/src/can1.c: 84: const struct CAN_INTERFACE CAN_FD1 = {
+[c E23392 0 1 2 3 4 5 6 7 .. ]
+[n E23392 CAN_OP_MODES CAN_NORMAL_FD_MODE CAN_DISABLE_MODE CAN_INTERNAL_LOOPBACK_MODE CAN_LISTEN_ONLY_MODE CAN_CONFIGURATION_MODE CAN_EXTERNAL_LOOPBACK_MODE CAN_NORMAL_2_0_MODE CAN_RESTRICTED_OPERATION_MODE  ]
+[c E23401 0 1 2 .. ]
+[n E23401 CAN_OP_MODE_STATUS CAN_OP_MODE_REQUEST_SUCCESS CAN_OP_MODE_REQUEST_FAIL CAN_OP_MODE_SYS_ERROR_OCCURED  ]
+[v F23435 `(E23401 ~T0 @X0 0 tf1`CE23392 ]
+[v F23438 `(E23392 ~T0 @X0 0 tf ]
+[c E23361 0 .. ]
+[n E23361 CAN_TX_FIFO_CHANNELS CAN_TX_FIFO_MAX  ]
+"66 mcc_generated_files/can/src/../can_types.h
+[; ;mcc_generated_files/can/src/../can_types.h: 66: {
+[s S3308 :1 `uc 1 :1 `uc 1 :4 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S3308 CAN_MSG_FIELD idType frameType dlc formatType brs ]
+"80
+[; ;mcc_generated_files/can/src/../can_types.h: 80: {
+[s S3309 `ul 1 `S3308 1 `*uc 1 ]
+[n S3309 CAN_MSG_OBJ msgId field data ]
+"84 mcc_generated_files/can/src/can1.c
+[; ;mcc_generated_files/can/src/can1.c: 84: const struct CAN_INTERFACE CAN_FD1 = {
+[c E23387 0 1 2 3 .. ]
+[n E23387 CAN_TX_MSG_REQUEST_STATUS CAN_TX_MSG_REQUEST_SUCCESS CAN_TX_MSG_REQUEST_DLC_EXCEED_ERROR CAN_TX_MSG_REQUEST_BRS_ERROR CAN_TX_MSG_REQUEST_FIFO_FULL  ]
+[v F23440 `(E23387 ~T0 @X0 0 tf2`CE23361`*S3309 ]
+[c E23405 0 1 .. ]
+[n E23405 CAN_TX_FIFO_STATUS CAN_TX_FIFO_FULL CAN_TX_FIFO_AVAILABLE  ]
+[v F23444 `(E23405 ~T0 @X0 0 tf1`CE23361 ]
+[v F23447 `(a ~T0 @X0 0 tf ]
+[v F23449 `(a ~T0 @X0 0 tf ]
+[v F23451 `(a ~T0 @X0 0 tf ]
+[v F23453 `(a ~T0 @X0 0 tf1`*S3309 ]
+[c E23363 0 .. ]
+[n E23363 CAN_RX_FIFO_CHANNELS CAN_RX_FIFO_MAX  ]
+[v F23456 `(a ~T0 @X0 0 tf2`CE23363`*S3309 ]
+[v F23460 `(uc ~T0 @X0 0 tf ]
+[v F23462 `(uc ~T0 @X0 0 tf1`CE23363 ]
+[v F23465 `(a ~T0 @X0 0 tf ]
+[v F23467 `(a ~T0 @X0 0 tf ]
+[v F23469 `(a ~T0 @X0 0 tf ]
+[v F23471 `(a ~T0 @X0 0 tf ]
+[v F23473 `(v ~T0 @X0 0 tf ]
+[v F23476 `(v ~T0 @X0 0 tf ]
+[v F23475 `(v ~T0 @X0 0 tf1`*F23476 ]
+[v F23480 `(v ~T0 @X0 0 tf ]
+[v F23479 `(v ~T0 @X0 0 tf1`*F23480 ]
+[v F23484 `(v ~T0 @X0 0 tf ]
+[v F23483 `(v ~T0 @X0 0 tf1`*F23484 ]
+[v F23488 `(v ~T0 @X0 0 tf ]
+[v F23487 `(v ~T0 @X0 0 tf1`*F23488 ]
+[v F23492 `(v ~T0 @X0 0 tf ]
+[v F23491 `(v ~T0 @X0 0 tf1`*F23492 ]
+[v F23496 `(v ~T0 @X0 0 tf ]
+[v F23495 `(v ~T0 @X0 0 tf1`*F23496 ]
+[v F23500 `(v ~T0 @X0 0 tf ]
+[v F23499 `(v ~T0 @X0 0 tf1`*F23500 ]
+[v F23503 `(v ~T0 @X0 0 tf ]
+"47 mcc_generated_files/can/src/../can_interface.h
+[; ;mcc_generated_files/can/src/../can_interface.h: 47: {
+[s S3310 `*F23431 1 `*F23433 1 `*F23435 1 `*F23438 1 `*F23440 1 `*F23444 1 `*F23447 1 `*F23449 1 `*F23451 1 `*F23453 1 `*F23456 1 `*F23460 1 `*F23462 1 `*F23465 1 `*F23467 1 `*F23469 1 `*F23471 1 `*F23473 1 `*F23475 1 `*F23479 1 `*F23483 1 `*F23487 1 `*F23491 1 `*F23495 1 `*F23499 1 `*F23503 1 ]
+[n S3310 CAN_INTERFACE Initialize Deinitialize OperationModeSet OperationModeGet Transmit TransmitFIFOStatusGet IsTxErrorPassive IsTxErrorWarning IsTxErrorActive Receive ReceiveMessageGet ReceivedMessageCountGet ReceiveFIFOStatusGet IsRxErrorPassive IsRxErrorWarning IsRxErrorActive IsBusOff SleepMode InvalidMessageCallbackRegister BusWakeUpActivityCallbackRegister BusErrorCallbackRegister ModeChangeCallbackRegister SystemErrorCallbackRegister TxAttemptCallbackRegister RxBufferOverFlowCallbackRegister Tasks ]
+"117 mcc_generated_files/can/src/../can1.h
+[; ;mcc_generated_files/can/src/../can1.h: 117: void CAN1_Initialize(void);
+[v _CAN1_Initialize `(v ~T0 @X0 0 ef ]
+"125
+[; ;mcc_generated_files/can/src/../can1.h: 125: void CAN1_Deinitialize(void);
+[v _CAN1_Deinitialize `(v ~T0 @X0 0 ef ]
+"134
+[; ;mcc_generated_files/can/src/../can1.h: 134: enum CAN_OP_MODE_STATUS CAN1_OperationModeSet(const enum CAN_OP_MODES requestMode);
+[v _CAN1_OperationModeSet `(E23401 ~T0 @X0 0 ef1`CE23392 ]
+"143
+[; ;mcc_generated_files/can/src/../can1.h: 143: enum CAN_OP_MODES CAN1_OperationModeGet(void);
+[v _CAN1_OperationModeGet `(E23392 ~T0 @X0 0 ef ]
+[v F23550 `(E23387 ~T0 @X0 0 tf2`CE23361`*S3309 ]
+[v F23553 `(E23405 ~T0 @X0 0 tf1`CE23361 ]
+[v F23555 `(a ~T0 @X0 0 tf ]
+[v F23556 `(a ~T0 @X0 0 tf ]
+[v F23557 `(a ~T0 @X0 0 tf ]
+[v F23558 `(a ~T0 @X0 0 tf1`*S3309 ]
+[v F23560 `(a ~T0 @X0 0 tf2`CE23363`*S3309 ]
+[v F23563 `(uc ~T0 @X0 0 tf ]
+[v F23564 `(uc ~T0 @X0 0 tf1`CE23363 ]
+[v F23566 `(a ~T0 @X0 0 tf ]
+[v F23567 `(a ~T0 @X0 0 tf ]
+[v F23568 `(a ~T0 @X0 0 tf ]
+"153
+[; ;mcc_generated_files/can/src/../can1.h: 153: _Bool CAN1_IsBusOff(void);
+[v _CAN1_IsBusOff `(a ~T0 @X0 0 ef ]
+"162
+[; ;mcc_generated_files/can/src/../can1.h: 162: void CAN1_Sleep(void);
+[v _CAN1_Sleep `(v ~T0 @X0 0 ef ]
+[v F23513 `(v ~T0 @X0 0 tf ]
+"170
+[; ;mcc_generated_files/can/src/../can1.h: 170: void CAN1_InvalidMessageCallbackRegister(void (*handler)(void));
+[v _CAN1_InvalidMessageCallbackRegister `(v ~T0 @X0 0 ef1`*F23513 ]
+[v F23517 `(v ~T0 @X0 0 tf ]
+"178
+[; ;mcc_generated_files/can/src/../can1.h: 178: void CAN1_BusWakeUpActivityCallbackRegister(void (*handler)(void));
+[v _CAN1_BusWakeUpActivityCallbackRegister `(v ~T0 @X0 0 ef1`*F23517 ]
+[v F23521 `(v ~T0 @X0 0 tf ]
+"186
+[; ;mcc_generated_files/can/src/../can1.h: 186: void CAN1_BusErrorCallbackRegister(void (*handler)(void));
+[v _CAN1_BusErrorCallbackRegister `(v ~T0 @X0 0 ef1`*F23521 ]
+[v F23525 `(v ~T0 @X0 0 tf ]
+"194
+[; ;mcc_generated_files/can/src/../can1.h: 194: void CAN1_ModeChangeCallbackRegister(void (*handler)(void));
+[v _CAN1_ModeChangeCallbackRegister `(v ~T0 @X0 0 ef1`*F23525 ]
+[v F23529 `(v ~T0 @X0 0 tf ]
+"202
+[; ;mcc_generated_files/can/src/../can1.h: 202: void CAN1_SystemErrorCallbackRegister(void (*handler)(void));
+[v _CAN1_SystemErrorCallbackRegister `(v ~T0 @X0 0 ef1`*F23529 ]
+[v F23587 `(v ~T0 @X0 0 tf ]
+[v F23586 `(v ~T0 @X0 0 tf1`*F23587 ]
+[v F23590 `(v ~T0 @X0 0 tf ]
+[v F23589 `(v ~T0 @X0 0 tf1`*F23590 ]
+"213
+[; ;mcc_generated_files/can/src/../can1.h: 213: void CAN1_Tasks(void);
+[v _CAN1_Tasks `(v ~T0 @X0 0 ef ]
+[v F23594 `(v ~T0 @X0 0 tf ]
+[v F23595 `(v ~T0 @X0 0 tf ]
+[v F23597 `(v ~T0 @X0 0 tf ]
+[v F23598 `(v ~T0 @X0 0 tf ]
+[v F23600 `(v ~T0 @X0 0 tf ]
+[v F23601 `(v ~T0 @X0 0 tf ]
+[v F23603 `(v ~T0 @X0 0 tf ]
+[v F23604 `(v ~T0 @X0 0 tf ]
+[v F23606 `(v ~T0 @X0 0 tf ]
+[v F23607 `(v ~T0 @X0 0 tf ]
+"71 mcc_generated_files/can/src/can1.c
+[; ;mcc_generated_files/can/src/can1.c: 71: {
+[s S3311 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `ul 1 ]
+[n S3311 CAN1_FIFOREG CONL CONH CONU CONT STAL STAH STAU STAT UA ]
+"13518 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h: 13518: extern volatile unsigned char C1TXQCONL __attribute__((address(0x150)));
+[v _C1TXQCONL `Vuc ~T0 @X0 0 e@336 ]
+"9232
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h: 9232: extern volatile unsigned char C1NBTCFGL __attribute__((address(0x104)));
+[v _C1NBTCFGL `Vuc ~T0 @X0 0 e@260 ]
+"9296
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h: 9296: extern volatile unsigned char C1NBTCFGH __attribute__((address(0x105)));
+[v _C1NBTCFGH `Vuc ~T0 @X0 0 e@261 ]
+"9360
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h: 9360: extern volatile unsigned char C1NBTCFGU __attribute__((address(0x106)));
+[v _C1NBTCFGU `Vuc ~T0 @X0 0 e@262 ]
+"9430
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h: 9430: extern volatile unsigned char C1NBTCFGT __attribute__((address(0x107)));
+[v _C1NBTCFGT `Vuc ~T0 @X0 0 e@263 ]
+"9500
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h: 9500: extern volatile unsigned char C1DBTCFGL __attribute__((address(0x108)));
+[v _C1DBTCFGL `Vuc ~T0 @X0 0 e@264 ]
+"9546
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h: 9546: extern volatile unsigned char C1DBTCFGH __attribute__((address(0x109)));
+[v _C1DBTCFGH `Vuc ~T0 @X0 0 e@265 ]
+"9592
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h: 9592: extern volatile unsigned char C1DBTCFGU __attribute__((address(0x10A)));
+[v _C1DBTCFGU `Vuc ~T0 @X0 0 e@266 ]
+"9644
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h: 9644: extern volatile unsigned char C1DBTCFGT __attribute__((address(0x10B)));
+[v _C1DBTCFGT `Vuc ~T0 @X0 0 e@267 ]
+"9714
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h: 9714: extern volatile unsigned char C1TDCL __attribute__((address(0x10C)));
+[v _C1TDCL `Vuc ~T0 @X0 0 e@268 ]
+"9772
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h: 9772: extern volatile unsigned char C1TDCH __attribute__((address(0x10D)));
+[v _C1TDCH `Vuc ~T0 @X0 0 e@269 ]
+"9836
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h: 9836: extern volatile unsigned char C1TDCU __attribute__((address(0x10E)));
+[v _C1TDCU `Vuc ~T0 @X0 0 e@270 ]
+"9870
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h: 9870: extern volatile unsigned char C1TDCT __attribute__((address(0x10F)));
+[v _C1TDCT `Vuc ~T0 @X0 0 e@271 ]
+"9019
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h: 9019:     struct {
+[s S424 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S424 . WAKFIL WFT BUSY BRSDIS SIDL FRZ ON ]
+"9028
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h: 9028:     struct {
+[s S425 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S425 . . WFT0 WFT1 ]
+"9018
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h: 9018: typedef union {
+[u S423 `S424 1 `S425 1 ]
+[n S423 . . . ]
+"9034
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h: 9034: extern volatile C1CONHbits_t C1CONHbits __attribute__((address(0x101)));
+[v _C1CONHbits `VS423 ~T0 @X0 0 e@257 ]
+"9155
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h: 9155: extern volatile unsigned char C1CONT __attribute__((address(0x103)));
+[v _C1CONT `Vuc ~T0 @X0 0 e@259 ]
+"9084
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h: 9084: extern volatile unsigned char C1CONU __attribute__((address(0x102)));
+[v _C1CONU `Vuc ~T0 @X0 0 e@258 ]
+"9013
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h: 9013: extern volatile unsigned char C1CONH __attribute__((address(0x101)));
+[v _C1CONH `Vuc ~T0 @X0 0 e@257 ]
+"8943
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h: 8943: extern volatile unsigned char C1CONL __attribute__((address(0x100)));
+[v _C1CONL `Vuc ~T0 @X0 0 e@256 ]
+"9090
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h: 9090:     struct {
+[s S427 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 ]
+[n S427 . RTXAT ESIGM SERR2LOM STEF TXQEN OPMOD ]
+"9098
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h: 9098:     struct {
+[s S428 :5 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S428 . . OPMOD0 OPMOD1 OPMOD2 ]
+"9089
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h: 9089: typedef union {
+[u S426 `S427 1 `S428 1 ]
+[n S426 . . . ]
+"9105
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h: 9105: extern volatile C1CONUbits_t C1CONUbits __attribute__((address(0x102)));
+[v _C1CONUbits `VS426 ~T0 @X0 0 e@258 ]
+"9161
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h: 9161:     struct {
+[s S430 :3 `uc 1 :1 `uc 1 :4 `uc 1 ]
+[n S430 . REQOP ABAT TXBWS ]
+"9166
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h: 9166:     struct {
+[s S431 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S431 . REQOP0 REQOP1 REQOP2 . TXBWS0 TXBWS1 TXBWS2 TXBWS3 ]
+"9160
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h: 9160: typedef union {
+[u S429 `S430 1 `S431 1 ]
+[n S429 . . . ]
+"9177
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h: 9177: extern volatile C1CONTbits_t C1CONTbits __attribute__((address(0x103)));
+[v _C1CONTbits `VS429 ~T0 @X0 0 e@259 ]
+"10456
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h: 10456:     struct {
+[s S498 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S498 . . TXATIF RXOVIF SERRIF CERRIF WAKIF IVMIF ]
+"10455
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h: 10455: typedef union {
+[u S497 `S498 1 ]
+[n S497 . . ]
+"10466
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h: 10466: extern volatile C1INTHbits_t C1INTHbits __attribute__((address(0x11D)));
+[v _C1INTHbits `VS497 ~T0 @X0 0 e@285 ]
+"12169
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h: 12169:     struct {
+[s S570 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S570 . EWARN RXWARN TXWARN RXBP TXBP TXBO ]
+"12168
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h: 12168: typedef union {
+[u S569 `S570 1 ]
+[n S569 . . ]
+"12178
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h: 12178: extern volatile C1TRECUbits_t C1TRECUbits __attribute__((address(0x136)));
+[v _C1TRECUbits `VS569 ~T0 @X0 0 e@310 ]
+"10551
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h: 10551:     struct {
+[s S502 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S502 . . TXATIE RXOVIE SERRIE CERRIE WAKIE IVMIE ]
+"10550
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h: 10550: typedef union {
+[u S501 `S502 1 ]
+[n S501 . . ]
+"10561
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h: 10561: extern volatile C1INTTbits_t C1INTTbits __attribute__((address(0x11F)));
+[v _C1INTTbits `VS501 ~T0 @X0 0 e@287 ]
+"2189
+[s S3113 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S3113 . SWIE HLVDIE OSFIE CSWIE TU16AIE CLC1IE CANIE IOCIE ]
 "2188
-[u S3111 `S3112 1 ]
-[n S3111 . . ]
+[u S3112 `S3113 1 ]
+[n S3112 . . ]
 "2200
 [; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h: 2200:         unsigned CH :8;
-[v _PIE0bits `VS3111 ~T0 @X0 0 e@1182 ]
+[v _PIE0bits `VS3112 ~T0 @X0 0 e@1182 ]
+[v F23620 `(v ~T0 @X0 0 tf ]
+[v F23622 `(v ~T0 @X0 0 tf ]
+[v F23623 `(v ~T0 @X0 0 tf ]
+[v F23626 `(v ~T0 @X0 0 tf ]
+[v F23628 `(v ~T0 @X0 0 tf ]
+[v F23629 `(v ~T0 @X0 0 tf ]
+[v F23632 `(v ~T0 @X0 0 tf ]
+[v F23634 `(v ~T0 @X0 0 tf ]
+[v F23635 `(v ~T0 @X0 0 tf ]
+[v F23638 `(v ~T0 @X0 0 tf ]
+[v F23640 `(v ~T0 @X0 0 tf ]
+[v F23641 `(v ~T0 @X0 0 tf ]
+[v F23644 `(v ~T0 @X0 0 tf ]
+[v F23646 `(v ~T0 @X0 0 tf ]
+[v F23647 `(v ~T0 @X0 0 tf ]
+[v F23650 `(v ~T0 @X0 0 tf ]
 "3174
-[s S3145 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S3145 . SWIF HLVDIF OSFIF CSWIF TU16AIF CLC1IF CANIF IOCIF ]
+[s S3146 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S3146 . SWIF HLVDIF OSFIF CSWIF TU16AIF CLC1IF CANIF IOCIF ]
 "3173
-[u S3144 `S3145 1 ]
-[n S3144 . . ]
+[u S3145 `S3146 1 ]
+[n S3145 . . ]
 "3185
-[v _PIR0bits `VS3144 ~T0 @X0 0 e@1198 ]
-"221 mcc_generated_files/system/src/../../system/../can/can1.h
-[; ;mcc_generated_files/system/src/../../system/../can/can1.h: 221: void CAN1_InformationISR(void);
-[v _CAN1_InformationISR `(v ~T0 @X0 0 ef ]
-"227 mcc_generated_files/system/src/../../system/../system/interrupt.h
-[v _INT0_CallBack `(v ~T0 @X0 0 ef ]
-[v F23412 `(v ~T0 @X0 0 tf ]
-[v F23414 `(v ~T0 @X0 0 tf ]
-[v F23416 `(v ~T0 @X0 0 tf ]
-"273
-[v _INT1_CallBack `(v ~T0 @X0 0 ef ]
-[v F23421 `(v ~T0 @X0 0 tf ]
-[v F23423 `(v ~T0 @X0 0 tf ]
-[v F23425 `(v ~T0 @X0 0 tf ]
-"319
-[v _INT2_CallBack `(v ~T0 @X0 0 ef ]
-[v F23430 `(v ~T0 @X0 0 tf ]
-[v F23432 `(v ~T0 @X0 0 tf ]
-[v F23434 `(v ~T0 @X0 0 tf ]
+[v _PIR0bits `VS3145 ~T0 @X0 0 e@1198 ]
+[v F23652 `(v ~T0 @X0 0 tf ]
+[v F23653 `(v ~T0 @X0 0 tf ]
+"10412
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h: 10412:     struct {
+[s S496 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S496 . TXIF RXIF TBCIF MODIF TEFIF ]
+"10411
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h: 10411: typedef union {
+[u S495 `S496 1 ]
+[n S495 . . ]
+"10420
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h: 10420: extern volatile C1INTLbits_t C1INTLbits __attribute__((address(0x11C)));
+[v _C1INTLbits `VS495 ~T0 @X0 0 e@284 ]
+[v F23654 `(v ~T0 @X0 0 tf ]
+[v F23655 `(v ~T0 @X0 0 tf ]
 "362 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h: 362: __asm("BOOTREG equ 038h");
 [; <" BOOTREG equ 038h ;# ">
@@ -3735,291 +3950,690 @@ Version 4.0 HI-TECH Software Intermediate Code
 "71983
 [; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f57q84.h: 71983: __asm("TOSU equ 04FFh");
 [; <" TOSU equ 04FFh ;# ">
-"38 mcc_generated_files/system/src/interrupt.c
-[; ;mcc_generated_files/system/src/interrupt.c: 38: void (*INT0_InterruptHandler)(void);
-[v _INT0_InterruptHandler `*F23400 ~T0 @X0 1 e ]
-"39
-[; ;mcc_generated_files/system/src/interrupt.c: 39: void (*INT1_InterruptHandler)(void);
-[v _INT1_InterruptHandler `*F23402 ~T0 @X0 1 e ]
-"40
-[; ;mcc_generated_files/system/src/interrupt.c: 40: void (*INT2_InterruptHandler)(void);
-[v _INT2_InterruptHandler `*F23404 ~T0 @X0 1 e ]
-"42
-[; ;mcc_generated_files/system/src/interrupt.c: 42: void INTERRUPT_Initialize (void)
-[v _INTERRUPT_Initialize `(v ~T0 @X0 1 ef ]
-"43
-[; ;mcc_generated_files/system/src/interrupt.c: 43: {
+"84 mcc_generated_files/can/src/can1.c
+[; ;mcc_generated_files/can/src/can1.c: 84: const struct CAN_INTERFACE CAN_FD1 = {
+[v _CAN_FD1 `CS3310 ~T0 @X0 1 e ]
+[i _CAN_FD1
+:U ..
+:U ..
+&U _CAN1_Initialize
+&U _CAN1_Deinitialize
+&U _CAN1_OperationModeSet
+&U _CAN1_OperationModeGet
+-> -> -> 0 `i `*v `*F23550
+-> -> -> 0 `i `*v `*F23553
+-> -> -> 0 `i `*v `*F23555
+-> -> -> 0 `i `*v `*F23556
+-> -> -> 0 `i `*v `*F23557
+-> -> -> 0 `i `*v `*F23558
+-> -> -> 0 `i `*v `*F23560
+-> -> -> 0 `i `*v `*F23563
+-> -> -> 0 `i `*v `*F23564
+-> -> -> 0 `i `*v `*F23566
+-> -> -> 0 `i `*v `*F23567
+-> -> -> 0 `i `*v `*F23568
+&U _CAN1_IsBusOff
+&U _CAN1_Sleep
+&U _CAN1_InvalidMessageCallbackRegister
+&U _CAN1_BusWakeUpActivityCallbackRegister
+&U _CAN1_BusErrorCallbackRegister
+&U _CAN1_ModeChangeCallbackRegister
+&U _CAN1_SystemErrorCallbackRegister
+-> -> -> 0 `i `*v `*F23586
+-> -> -> 0 `i `*v `*F23589
+&U _CAN1_Tasks
+..
+..
+]
+"114
+[; ;mcc_generated_files/can/src/can1.c: 114: static void (*CAN1_InvalidMessageHandler)(void) = ((void*)0);
+[v _CAN1_InvalidMessageHandler `*F23594 ~T0 @X0 1 s ]
+[i _CAN1_InvalidMessageHandler
+-> -> -> 0 `i `*v `*F23595
+]
+"115
+[; ;mcc_generated_files/can/src/can1.c: 115: static void (*CAN1_BusWakeUpActivityHandler)(void) = ((void*)0);
+[v _CAN1_BusWakeUpActivityHandler `*F23597 ~T0 @X0 1 s ]
+[i _CAN1_BusWakeUpActivityHandler
+-> -> -> 0 `i `*v `*F23598
+]
+"116
+[; ;mcc_generated_files/can/src/can1.c: 116: static void (*CAN1_BusErrorHandler)(void) = ((void*)0);
+[v _CAN1_BusErrorHandler `*F23600 ~T0 @X0 1 s ]
+[i _CAN1_BusErrorHandler
+-> -> -> 0 `i `*v `*F23601
+]
+"117
+[; ;mcc_generated_files/can/src/can1.c: 117: static void (*CAN1_ModeChangeHandler)(void) = ((void*)0);
+[v _CAN1_ModeChangeHandler `*F23603 ~T0 @X0 1 s ]
+[i _CAN1_ModeChangeHandler
+-> -> -> 0 `i `*v `*F23604
+]
+"118
+[; ;mcc_generated_files/can/src/can1.c: 118: static void (*CAN1_SystemErrorHandler)(void) = ((void*)0);
+[v _CAN1_SystemErrorHandler `*F23606 ~T0 @X0 1 s ]
+[i _CAN1_SystemErrorHandler
+-> -> -> 0 `i `*v `*F23607
+]
+[v F23609 `*VS3311 ~T0 @X0 1 t ]
+"121
+[; ;mcc_generated_files/can/src/can1.c: 121: static volatile struct CAN1_FIFOREG * const FIFO = (struct CAN1_FIFOREG *)&C1TXQCONL;
+[v _FIFO `C*VS3311 ~T0 @X0 1 s ]
+[i _FIFO
+-> -> &U _C1TXQCONL `*S3311 `*VS3311
+]
+"129
+[; ;mcc_generated_files/can/src/can1.c: 129: static void CAN1_BitRateConfiguration(void)
+[v _CAN1_BitRateConfiguration `(v ~T0 @X0 1 sf ]
+"130
+[; ;mcc_generated_files/can/src/can1.c: 130: {
 {
-[e :U _INTERRUPT_Initialize ]
+[e :U _CAN1_BitRateConfiguration ]
 [f ]
-"45
-[; ;mcc_generated_files/system/src/interrupt.c: 45:     INTCON0bits.IPEN = 0;
-[e = . . _INTCON0bits 0 4 -> -> 0 `i `uc ]
-"49
-[; ;mcc_generated_files/system/src/interrupt.c: 49:     (PIR1bits.INT0IF = 0);
-[e = . . _PIR1bits 0 0 -> -> 0 `i `uc ]
-"50
-[; ;mcc_generated_files/system/src/interrupt.c: 50:     (INTCON0bits.INT0EDG = 1);
-[e = . . _INTCON0bits 0 0 -> -> 1 `i `uc ]
-"52
-[; ;mcc_generated_files/system/src/interrupt.c: 52:     INT0_SetInterruptHandler(INT0_DefaultInterruptHandler);
-[e ( _INT0_SetInterruptHandler (1 &U _INT0_DefaultInterruptHandler ]
-"57
-[; ;mcc_generated_files/system/src/interrupt.c: 57:     (PIR6bits.INT1IF = 0);
-[e = . . _PIR6bits 0 0 -> -> 0 `i `uc ]
-"58
-[; ;mcc_generated_files/system/src/interrupt.c: 58:     (INTCON0bits.INT1EDG = 1);
-[e = . . _INTCON0bits 0 1 -> -> 1 `i `uc ]
-"60
-[; ;mcc_generated_files/system/src/interrupt.c: 60:     INT1_SetInterruptHandler(INT1_DefaultInterruptHandler);
-[e ( _INT1_SetInterruptHandler (1 &U _INT1_DefaultInterruptHandler ]
-"65
-[; ;mcc_generated_files/system/src/interrupt.c: 65:     (PIR10bits.INT2IF = 0);
-[e = . . _PIR10bits 0 0 -> -> 0 `i `uc ]
-"66
-[; ;mcc_generated_files/system/src/interrupt.c: 66:     (INTCON0bits.INT2EDG = 1);
-[e = . . _INTCON0bits 0 2 -> -> 1 `i `uc ]
-"68
-[; ;mcc_generated_files/system/src/interrupt.c: 68:     INT2_SetInterruptHandler(INT2_DefaultInterruptHandler);
-[e ( _INT2_SetInterruptHandler (1 &U _INT2_DefaultInterruptHandler ]
-"71
-[; ;mcc_generated_files/system/src/interrupt.c: 71: }
-[e :UE 3310 ]
+"132
+[; ;mcc_generated_files/can/src/can1.c: 132:     C1NBTCFGL = 0x7F;
+[e = _C1NBTCFGL -> -> 127 `i `uc ]
+"134
+[; ;mcc_generated_files/can/src/can1.c: 134:     C1NBTCFGH = 0x7F;
+[e = _C1NBTCFGH -> -> 127 `i `uc ]
+"136
+[; ;mcc_generated_files/can/src/can1.c: 136:     C1NBTCFGU = 0x7E;
+[e = _C1NBTCFGU -> -> 126 `i `uc ]
+"138
+[; ;mcc_generated_files/can/src/can1.c: 138:     C1NBTCFGT = 0x1;
+[e = _C1NBTCFGT -> -> 1 `i `uc ]
+"140
+[; ;mcc_generated_files/can/src/can1.c: 140:     C1DBTCFGL = 0x0;
+[e = _C1DBTCFGL -> -> 0 `i `uc ]
+"142
+[; ;mcc_generated_files/can/src/can1.c: 142:     C1DBTCFGH = 0x0;
+[e = _C1DBTCFGH -> -> 0 `i `uc ]
+"144
+[; ;mcc_generated_files/can/src/can1.c: 144:     C1DBTCFGU = 0x0;
+[e = _C1DBTCFGU -> -> 0 `i `uc ]
+"146
+[; ;mcc_generated_files/can/src/can1.c: 146:     C1DBTCFGT = 0x0;
+[e = _C1DBTCFGT -> -> 0 `i `uc ]
+"148
+[; ;mcc_generated_files/can/src/can1.c: 148:     C1TDCL = 0x0;
+[e = _C1TDCL -> -> 0 `i `uc ]
+"150
+[; ;mcc_generated_files/can/src/can1.c: 150:     C1TDCH = 0x0;
+[e = _C1TDCH -> -> 0 `i `uc ]
+"152
+[; ;mcc_generated_files/can/src/can1.c: 152:     C1TDCU = 0x0;
+[e = _C1TDCU -> -> 0 `i `uc ]
+"154
+[; ;mcc_generated_files/can/src/can1.c: 154:     C1TDCT = 0x0;
+[e = _C1TDCT -> -> 0 `i `uc ]
+"155
+[; ;mcc_generated_files/can/src/can1.c: 155: }
+[e :UE 3312 ]
 }
-[v $root$_INTERRUPT_InterruptManager `(v ~T0 @X0 0 e ]
-"80
-[; ;mcc_generated_files/system/src/interrupt.c: 80: void __attribute__((picinterrupt(("")))) INTERRUPT_InterruptManager (void)
-[v _INTERRUPT_InterruptManager `(v ~T1 @X0 1 ef ]
-"81
-[; ;mcc_generated_files/system/src/interrupt.c: 81: {
+"158
+[; ;mcc_generated_files/can/src/can1.c: 158: void CAN1_Initialize(void)
+[v _CAN1_Initialize `(v ~T0 @X0 1 ef ]
+"159
+[; ;mcc_generated_files/can/src/can1.c: 159: {
 {
-[e :U _INTERRUPT_InterruptManager ]
+[e :U _CAN1_Initialize ]
 [f ]
-"83
-[; ;mcc_generated_files/system/src/interrupt.c: 83:     if(PIE0bits.CANIE == 1 && PIR0bits.CANIF == 1)
-[e $ ! && == -> . . _PIE0bits 0 6 `i -> 1 `i == -> . . _PIR0bits 0 6 `i -> 1 `i 3312  ]
-"84
-[; ;mcc_generated_files/system/src/interrupt.c: 84:     {
+"161
+[; ;mcc_generated_files/can/src/can1.c: 161:     C1CONHbits.ON = 1;
+[e = . . _C1CONHbits 0 6 -> -> 1 `i `uc ]
+"164
+[; ;mcc_generated_files/can/src/can1.c: 164:     C1CONT = 0x4;
+[e = _C1CONT -> -> 4 `i `uc ]
+"167
+[; ;mcc_generated_files/can/src/can1.c: 167:     C1CONU = 0x80;
+[e = _C1CONU -> -> 128 `i `uc ]
+"170
+[; ;mcc_generated_files/can/src/can1.c: 170:     if (CAN_OP_MODE_REQUEST_SUCCESS == CAN1_OperationModeSet(CAN_CONFIGURATION_MODE))
+[e $ ! == -> . `E23401 0 `ui -> ( _CAN1_OperationModeSet (1 . `E23392 4 `ui 3314  ]
+"171
+[; ;mcc_generated_files/can/src/can1.c: 171:     {
 {
-"85
-[; ;mcc_generated_files/system/src/interrupt.c: 85:         CAN1_InformationISR();
-[e ( _CAN1_InformationISR ..  ]
-"86
-[; ;mcc_generated_files/system/src/interrupt.c: 86:     }
+"173
+[; ;mcc_generated_files/can/src/can1.c: 173:         C1CONH = 0x97;
+[e = _C1CONH -> -> 151 `i `uc ]
+"176
+[; ;mcc_generated_files/can/src/can1.c: 176:         C1CONL = 0x60;
+[e = _C1CONL -> -> 96 `i `uc ]
+"179
+[; ;mcc_generated_files/can/src/can1.c: 179:         C1CONUbits.STEF = 0;
+[e = . . _C1CONUbits 0 3 -> -> 0 `i `uc ]
+"181
+[; ;mcc_generated_files/can/src/can1.c: 181:         C1CONUbits.TXQEN = 0;
+[e = . . _C1CONUbits 0 4 -> -> 0 `i `uc ]
+"184
+[; ;mcc_generated_files/can/src/can1.c: 184:         CAN1_BitRateConfiguration();
+[e ( _CAN1_BitRateConfiguration ..  ]
+"187
+[; ;mcc_generated_files/can/src/can1.c: 187:         (void)CAN1_OperationModeSet(CAN_NORMAL_FD_MODE);
+[e ( _CAN1_OperationModeSet (1 . `E23392 0 ]
+"188
+[; ;mcc_generated_files/can/src/can1.c: 188:     }
 }
-[e $U 3313  ]
-"87
-[; ;mcc_generated_files/system/src/interrupt.c: 87:     else
-[e :U 3312 ]
-"88
-[; ;mcc_generated_files/system/src/interrupt.c: 88:     {
+[e :U 3314 ]
+"189
+[; ;mcc_generated_files/can/src/can1.c: 189: }
+[e :UE 3313 ]
+}
+"191
+[; ;mcc_generated_files/can/src/can1.c: 191: void CAN1_Deinitialize(void)
+[v _CAN1_Deinitialize `(v ~T0 @X0 1 ef ]
+"192
+[; ;mcc_generated_files/can/src/can1.c: 192: {
 {
-"90
-[; ;mcc_generated_files/system/src/interrupt.c: 90:     }
-}
-[e :U 3313 ]
-"91
-[; ;mcc_generated_files/system/src/interrupt.c: 91: }
-[e :UE 3311 ]
-}
-"93
-[; ;mcc_generated_files/system/src/interrupt.c: 93: void INT0_ISR(void)
-[v _INT0_ISR `(v ~T0 @X0 1 ef ]
-"94
-[; ;mcc_generated_files/system/src/interrupt.c: 94: {
-{
-[e :U _INT0_ISR ]
+[e :U _CAN1_Deinitialize ]
 [f ]
-"95
-[; ;mcc_generated_files/system/src/interrupt.c: 95:     (PIR1bits.INT0IF = 0);
-[e = . . _PIR1bits 0 0 -> -> 0 `i `uc ]
-"98
-[; ;mcc_generated_files/system/src/interrupt.c: 98:     INT0_CallBack();
-[e ( _INT0_CallBack ..  ]
-"99
-[; ;mcc_generated_files/system/src/interrupt.c: 99: }
-[e :UE 3314 ]
-}
-"102
-[; ;mcc_generated_files/system/src/interrupt.c: 102: void INT0_CallBack(void)
-[v _INT0_CallBack `(v ~T0 @X0 1 ef ]
-"103
-[; ;mcc_generated_files/system/src/interrupt.c: 103: {
+"194
+[; ;mcc_generated_files/can/src/can1.c: 194:     if(CAN_OP_MODE_REQUEST_SUCCESS == CAN1_OperationModeSet(CAN_CONFIGURATION_MODE))
+[e $ ! == -> . `E23401 0 `ui -> ( _CAN1_OperationModeSet (1 . `E23392 4 `ui 3316  ]
+"195
+[; ;mcc_generated_files/can/src/can1.c: 195:     {
 {
-[e :U _INT0_CallBack ]
-[f ]
-"105
-[; ;mcc_generated_files/system/src/interrupt.c: 105:     if(INT0_InterruptHandler)
-[e $ ! != _INT0_InterruptHandler -> -> 0 `i `*F23412 3316  ]
-"106
-[; ;mcc_generated_files/system/src/interrupt.c: 106:     {
-{
-"107
-[; ;mcc_generated_files/system/src/interrupt.c: 107:         INT0_InterruptHandler();
-[e ( *U _INT0_InterruptHandler ..  ]
-"108
-[; ;mcc_generated_files/system/src/interrupt.c: 108:     }
+"196
+[; ;mcc_generated_files/can/src/can1.c: 196:         C1CONL = 0x60;
+[e = _C1CONL -> -> 96 `i `uc ]
+"197
+[; ;mcc_generated_files/can/src/can1.c: 197:         C1CONH = 0x7;
+[e = _C1CONH -> -> 7 `i `uc ]
+"198
+[; ;mcc_generated_files/can/src/can1.c: 198:         C1CONU = 0x98;
+[e = _C1CONU -> -> 152 `i `uc ]
+"199
+[; ;mcc_generated_files/can/src/can1.c: 199:         C1CONT = 0x4;
+[e = _C1CONT -> -> 4 `i `uc ]
+"202
+[; ;mcc_generated_files/can/src/can1.c: 202:         C1NBTCFGL = 0xF;
+[e = _C1NBTCFGL -> -> 15 `i `uc ]
+"203
+[; ;mcc_generated_files/can/src/can1.c: 203:         C1NBTCFGH = 0xF;
+[e = _C1NBTCFGH -> -> 15 `i `uc ]
+"204
+[; ;mcc_generated_files/can/src/can1.c: 204:         C1NBTCFGU = 0x3E;
+[e = _C1NBTCFGU -> -> 62 `i `uc ]
+"205
+[; ;mcc_generated_files/can/src/can1.c: 205:         C1NBTCFGT = 0x0;
+[e = _C1NBTCFGT -> -> 0 `i `uc ]
+"206
+[; ;mcc_generated_files/can/src/can1.c: 206:         C1DBTCFGL = 0x3;
+[e = _C1DBTCFGL -> -> 3 `i `uc ]
+"207
+[; ;mcc_generated_files/can/src/can1.c: 207:         C1DBTCFGH = 0x3;
+[e = _C1DBTCFGH -> -> 3 `i `uc ]
+"208
+[; ;mcc_generated_files/can/src/can1.c: 208:         C1DBTCFGU = 0xE;
+[e = _C1DBTCFGU -> -> 14 `i `uc ]
+"209
+[; ;mcc_generated_files/can/src/can1.c: 209:         C1DBTCFGT = 0x0;
+[e = _C1DBTCFGT -> -> 0 `i `uc ]
+"210
+[; ;mcc_generated_files/can/src/can1.c: 210:         C1TDCL = 0x0;
+[e = _C1TDCL -> -> 0 `i `uc ]
+"211
+[; ;mcc_generated_files/can/src/can1.c: 211:         C1TDCH = 0x10;
+[e = _C1TDCH -> -> 16 `i `uc ]
+"212
+[; ;mcc_generated_files/can/src/can1.c: 212:         C1TDCU = 0x2;
+[e = _C1TDCU -> -> 2 `i `uc ]
+"213
+[; ;mcc_generated_files/can/src/can1.c: 213:         C1TDCT = 0x0;
+[e = _C1TDCT -> -> 0 `i `uc ]
+"215
+[; ;mcc_generated_files/can/src/can1.c: 215:     }
 }
 [e :U 3316 ]
-"109
-[; ;mcc_generated_files/system/src/interrupt.c: 109: }
+"218
+[; ;mcc_generated_files/can/src/can1.c: 218:     C1CONHbits.ON = 0;
+[e = . . _C1CONHbits 0 6 -> -> 0 `i `uc ]
+"219
+[; ;mcc_generated_files/can/src/can1.c: 219: }
 [e :UE 3315 ]
 }
-"111
-[; ;mcc_generated_files/system/src/interrupt.c: 111: void INT0_SetInterruptHandler(void (* InterruptHandler)(void)){
-[v _INT0_SetInterruptHandler `(v ~T0 @X0 1 ef1`*F23414 ]
+"221
+[; ;mcc_generated_files/can/src/can1.c: 221: enum CAN_OP_MODE_STATUS CAN1_OperationModeSet(const enum CAN_OP_MODES requestMode)
+[v _CAN1_OperationModeSet `(E23401 ~T0 @X0 1 ef1`CE23392 ]
+"222
+[; ;mcc_generated_files/can/src/can1.c: 222: {
 {
-[e :U _INT0_SetInterruptHandler ]
-[v _InterruptHandler `*F23416 ~T0 @X0 1 r1 ]
+[e :U _CAN1_OperationModeSet ]
+"221
+[; ;mcc_generated_files/can/src/can1.c: 221: enum CAN_OP_MODE_STATUS CAN1_OperationModeSet(const enum CAN_OP_MODES requestMode)
+[v _requestMode `CE23392 ~T0 @X0 1 r1 ]
+"222
+[; ;mcc_generated_files/can/src/can1.c: 222: {
 [f ]
-"112
-[; ;mcc_generated_files/system/src/interrupt.c: 112:     INT0_InterruptHandler = InterruptHandler;
-[e = _INT0_InterruptHandler _InterruptHandler ]
-"113
-[; ;mcc_generated_files/system/src/interrupt.c: 113: }
+"223
+[; ;mcc_generated_files/can/src/can1.c: 223:     enum CAN_OP_MODE_STATUS status = CAN_OP_MODE_REQUEST_SUCCESS;
+[v _status `E23401 ~T0 @X0 1 a ]
+[e = _status . `E23401 0 ]
+"225
+[; ;mcc_generated_files/can/src/can1.c: 225:     if ((CAN1_OperationModeGet() == CAN_CONFIGURATION_MODE)
+[e $ ! || || == -> ( _CAN1_OperationModeGet ..  `ui -> . `E23392 4 `ui == -> _requestMode `ui -> . `E23392 1 `ui == -> _requestMode `ui -> . `E23392 4 `ui 3318  ]
+"228
+[; ;mcc_generated_files/can/src/can1.c: 228:     {
+{
+"229
+[; ;mcc_generated_files/can/src/can1.c: 229:         C1CONTbits.REQOP = requestMode;
+[e = . . _C1CONTbits 0 0 -> _requestMode `uc ]
+"231
+[; ;mcc_generated_files/can/src/can1.c: 231:         while (C1CONUbits.OPMOD != requestMode)
+[e $U 3319  ]
+[e :U 3320 ]
+"232
+[; ;mcc_generated_files/can/src/can1.c: 232:         {
+{
+"234
+[; ;mcc_generated_files/can/src/can1.c: 234:             if (C1INTHbits.SERRIF == 1)
+[e $ ! == -> . . _C1INTHbits 0 3 `i -> 1 `i 3322  ]
+"235
+[; ;mcc_generated_files/can/src/can1.c: 235:             {
+{
+"236
+[; ;mcc_generated_files/can/src/can1.c: 236:                 status = CAN_OP_MODE_SYS_ERROR_OCCURED;
+[e = _status . `E23401 2 ]
+"237
+[; ;mcc_generated_files/can/src/can1.c: 237:                 break;
+[e $U 3321  ]
+"238
+[; ;mcc_generated_files/can/src/can1.c: 238:             }
+}
+[e :U 3322 ]
+"239
+[; ;mcc_generated_files/can/src/can1.c: 239:         }
+}
+[e :U 3319 ]
+"231
+[; ;mcc_generated_files/can/src/can1.c: 231:         while (C1CONUbits.OPMOD != requestMode)
+[e $ != -> . . _C1CONUbits 0 5 `ui -> _requestMode `ui 3320  ]
+[e :U 3321 ]
+"240
+[; ;mcc_generated_files/can/src/can1.c: 240:     }
+}
+[e $U 3323  ]
+"241
+[; ;mcc_generated_files/can/src/can1.c: 241:     else
+[e :U 3318 ]
+"242
+[; ;mcc_generated_files/can/src/can1.c: 242:     {
+{
+"243
+[; ;mcc_generated_files/can/src/can1.c: 243:         status = CAN_OP_MODE_REQUEST_FAIL;
+[e = _status . `E23401 1 ]
+"244
+[; ;mcc_generated_files/can/src/can1.c: 244:     }
+}
+[e :U 3323 ]
+"246
+[; ;mcc_generated_files/can/src/can1.c: 246:     return status;
+[e ) _status ]
+[e $UE 3317  ]
+"247
+[; ;mcc_generated_files/can/src/can1.c: 247: }
 [e :UE 3317 ]
 }
-"115
-[; ;mcc_generated_files/system/src/interrupt.c: 115: void INT0_DefaultInterruptHandler(void){
-[v _INT0_DefaultInterruptHandler `(v ~T0 @X0 1 ef ]
+"249
+[; ;mcc_generated_files/can/src/can1.c: 249: enum CAN_OP_MODES CAN1_OperationModeGet(void)
+[v _CAN1_OperationModeGet `(E23392 ~T0 @X0 1 ef ]
+"250
+[; ;mcc_generated_files/can/src/can1.c: 250: {
 {
-[e :U _INT0_DefaultInterruptHandler ]
+[e :U _CAN1_OperationModeGet ]
 [f ]
-"118
-[; ;mcc_generated_files/system/src/interrupt.c: 118: }
-[e :UE 3318 ]
-}
-"119
-[; ;mcc_generated_files/system/src/interrupt.c: 119: void INT1_ISR(void)
-[v _INT1_ISR `(v ~T0 @X0 1 ef ]
-"120
-[; ;mcc_generated_files/system/src/interrupt.c: 120: {
-{
-[e :U _INT1_ISR ]
-[f ]
-"121
-[; ;mcc_generated_files/system/src/interrupt.c: 121:     (PIR6bits.INT1IF = 0);
-[e = . . _PIR6bits 0 0 -> -> 0 `i `uc ]
-"124
-[; ;mcc_generated_files/system/src/interrupt.c: 124:     INT1_CallBack();
-[e ( _INT1_CallBack ..  ]
-"125
-[; ;mcc_generated_files/system/src/interrupt.c: 125: }
-[e :UE 3319 ]
-}
-"128
-[; ;mcc_generated_files/system/src/interrupt.c: 128: void INT1_CallBack(void)
-[v _INT1_CallBack `(v ~T0 @X0 1 ef ]
-"129
-[; ;mcc_generated_files/system/src/interrupt.c: 129: {
-{
-[e :U _INT1_CallBack ]
-[f ]
-"131
-[; ;mcc_generated_files/system/src/interrupt.c: 131:     if(INT1_InterruptHandler)
-[e $ ! != _INT1_InterruptHandler -> -> 0 `i `*F23421 3321  ]
-"132
-[; ;mcc_generated_files/system/src/interrupt.c: 132:     {
-{
-"133
-[; ;mcc_generated_files/system/src/interrupt.c: 133:         INT1_InterruptHandler();
-[e ( *U _INT1_InterruptHandler ..  ]
-"134
-[; ;mcc_generated_files/system/src/interrupt.c: 134:     }
-}
-[e :U 3321 ]
-"135
-[; ;mcc_generated_files/system/src/interrupt.c: 135: }
-[e :UE 3320 ]
-}
-"137
-[; ;mcc_generated_files/system/src/interrupt.c: 137: void INT1_SetInterruptHandler(void (* InterruptHandler)(void)){
-[v _INT1_SetInterruptHandler `(v ~T0 @X0 1 ef1`*F23423 ]
-{
-[e :U _INT1_SetInterruptHandler ]
-[v _InterruptHandler `*F23425 ~T0 @X0 1 r1 ]
-[f ]
-"138
-[; ;mcc_generated_files/system/src/interrupt.c: 138:     INT1_InterruptHandler = InterruptHandler;
-[e = _INT1_InterruptHandler _InterruptHandler ]
-"139
-[; ;mcc_generated_files/system/src/interrupt.c: 139: }
-[e :UE 3322 ]
-}
-"141
-[; ;mcc_generated_files/system/src/interrupt.c: 141: void INT1_DefaultInterruptHandler(void){
-[v _INT1_DefaultInterruptHandler `(v ~T0 @X0 1 ef ]
-{
-[e :U _INT1_DefaultInterruptHandler ]
-[f ]
-"144
-[; ;mcc_generated_files/system/src/interrupt.c: 144: }
-[e :UE 3323 ]
-}
-"145
-[; ;mcc_generated_files/system/src/interrupt.c: 145: void INT2_ISR(void)
-[v _INT2_ISR `(v ~T0 @X0 1 ef ]
-"146
-[; ;mcc_generated_files/system/src/interrupt.c: 146: {
-{
-[e :U _INT2_ISR ]
-[f ]
-"147
-[; ;mcc_generated_files/system/src/interrupt.c: 147:     (PIR10bits.INT2IF = 0);
-[e = . . _PIR10bits 0 0 -> -> 0 `i `uc ]
-"150
-[; ;mcc_generated_files/system/src/interrupt.c: 150:     INT2_CallBack();
-[e ( _INT2_CallBack ..  ]
-"151
-[; ;mcc_generated_files/system/src/interrupt.c: 151: }
+"251
+[; ;mcc_generated_files/can/src/can1.c: 251:     return C1CONUbits.OPMOD;
+[e ) -> . . _C1CONUbits 0 5 `E23392 ]
+[e $UE 3324  ]
+"252
+[; ;mcc_generated_files/can/src/can1.c: 252: }
 [e :UE 3324 ]
 }
-"154
-[; ;mcc_generated_files/system/src/interrupt.c: 154: void INT2_CallBack(void)
-[v _INT2_CallBack `(v ~T0 @X0 1 ef ]
-"155
-[; ;mcc_generated_files/system/src/interrupt.c: 155: {
+"254
+[; ;mcc_generated_files/can/src/can1.c: 254: _Bool CAN1_IsBusOff(void)
+[v _CAN1_IsBusOff `(a ~T0 @X0 1 ef ]
+"255
+[; ;mcc_generated_files/can/src/can1.c: 255: {
 {
-[e :U _INT2_CallBack ]
+[e :U _CAN1_IsBusOff ]
 [f ]
-"157
-[; ;mcc_generated_files/system/src/interrupt.c: 157:     if(INT2_InterruptHandler)
-[e $ ! != _INT2_InterruptHandler -> -> 0 `i `*F23430 3326  ]
-"158
-[; ;mcc_generated_files/system/src/interrupt.c: 158:     {
-{
-"159
-[; ;mcc_generated_files/system/src/interrupt.c: 159:         INT2_InterruptHandler();
-[e ( *U _INT2_InterruptHandler ..  ]
-"160
-[; ;mcc_generated_files/system/src/interrupt.c: 160:     }
-}
-[e :U 3326 ]
-"161
-[; ;mcc_generated_files/system/src/interrupt.c: 161: }
+"256
+[; ;mcc_generated_files/can/src/can1.c: 256:     return C1TRECUbits.TXBO;
+[e ) -> . . _C1TRECUbits 0 5 `a ]
+[e $UE 3325  ]
+"257
+[; ;mcc_generated_files/can/src/can1.c: 257: }
 [e :UE 3325 ]
 }
-"163
-[; ;mcc_generated_files/system/src/interrupt.c: 163: void INT2_SetInterruptHandler(void (* InterruptHandler)(void)){
-[v _INT2_SetInterruptHandler `(v ~T0 @X0 1 ef1`*F23432 ]
+"259
+[; ;mcc_generated_files/can/src/can1.c: 259: void CAN1_Sleep(void)
+[v _CAN1_Sleep `(v ~T0 @X0 1 ef ]
+"260
+[; ;mcc_generated_files/can/src/can1.c: 260: {
 {
-[e :U _INT2_SetInterruptHandler ]
-[v _InterruptHandler `*F23434 ~T0 @X0 1 r1 ]
+[e :U _CAN1_Sleep ]
 [f ]
-"164
-[; ;mcc_generated_files/system/src/interrupt.c: 164:     INT2_InterruptHandler = InterruptHandler;
-[e = _INT2_InterruptHandler _InterruptHandler ]
-"165
-[; ;mcc_generated_files/system/src/interrupt.c: 165: }
+"261
+[; ;mcc_generated_files/can/src/can1.c: 261:     C1INTHbits.WAKIF = 0;
+[e = . . _C1INTHbits 0 5 -> -> 0 `i `uc ]
+"262
+[; ;mcc_generated_files/can/src/can1.c: 262:     C1INTTbits.WAKIE = 1;
+[e = . . _C1INTTbits 0 5 -> -> 1 `i `uc ]
+"265
+[; ;mcc_generated_files/can/src/can1.c: 265:     PIE0bits.CANIE = 1;
+[e = . . _PIE0bits 0 6 -> -> 1 `i `uc ]
+"268
+[; ;mcc_generated_files/can/src/can1.c: 268:     (void)CAN1_OperationModeSet(CAN_DISABLE_MODE);
+[e ( _CAN1_OperationModeSet (1 . `E23392 1 ]
+"269
+[; ;mcc_generated_files/can/src/can1.c: 269: }
+[e :UE 3326 ]
+}
+"271
+[; ;mcc_generated_files/can/src/can1.c: 271: void CAN1_InvalidMessageCallbackRegister(void (*handler)(void))
+[v _CAN1_InvalidMessageCallbackRegister `(v ~T0 @X0 1 ef1`*F23620 ]
+"272
+[; ;mcc_generated_files/can/src/can1.c: 272: {
+{
+[e :U _CAN1_InvalidMessageCallbackRegister ]
+"271
+[; ;mcc_generated_files/can/src/can1.c: 271: void CAN1_InvalidMessageCallbackRegister(void (*handler)(void))
+[v _handler `*F23622 ~T0 @X0 1 r1 ]
+"272
+[; ;mcc_generated_files/can/src/can1.c: 272: {
+[f ]
+"273
+[; ;mcc_generated_files/can/src/can1.c: 273:     if(handler != ((void*)0))
+[e $ ! != _handler -> -> -> 0 `i `*v `*F23623 3328  ]
+"274
+[; ;mcc_generated_files/can/src/can1.c: 274:     {
+{
+"275
+[; ;mcc_generated_files/can/src/can1.c: 275:         CAN1_InvalidMessageHandler = handler;
+[e = _CAN1_InvalidMessageHandler _handler ]
+"276
+[; ;mcc_generated_files/can/src/can1.c: 276:     }
+}
+[e :U 3328 ]
+"277
+[; ;mcc_generated_files/can/src/can1.c: 277: }
 [e :UE 3327 ]
 }
-"167
-[; ;mcc_generated_files/system/src/interrupt.c: 167: void INT2_DefaultInterruptHandler(void){
-[v _INT2_DefaultInterruptHandler `(v ~T0 @X0 1 ef ]
+"279
+[; ;mcc_generated_files/can/src/can1.c: 279: void CAN1_BusWakeUpActivityCallbackRegister(void (*handler)(void))
+[v _CAN1_BusWakeUpActivityCallbackRegister `(v ~T0 @X0 1 ef1`*F23626 ]
+"280
+[; ;mcc_generated_files/can/src/can1.c: 280: {
 {
-[e :U _INT2_DefaultInterruptHandler ]
+[e :U _CAN1_BusWakeUpActivityCallbackRegister ]
+"279
+[; ;mcc_generated_files/can/src/can1.c: 279: void CAN1_BusWakeUpActivityCallbackRegister(void (*handler)(void))
+[v _handler `*F23628 ~T0 @X0 1 r1 ]
+"280
+[; ;mcc_generated_files/can/src/can1.c: 280: {
 [f ]
-"170
-[; ;mcc_generated_files/system/src/interrupt.c: 170: }
-[e :UE 3328 ]
+"281
+[; ;mcc_generated_files/can/src/can1.c: 281:     if(handler != ((void*)0))
+[e $ ! != _handler -> -> -> 0 `i `*v `*F23629 3330  ]
+"282
+[; ;mcc_generated_files/can/src/can1.c: 282:     {
+{
+"283
+[; ;mcc_generated_files/can/src/can1.c: 283:         CAN1_BusWakeUpActivityHandler = handler;
+[e = _CAN1_BusWakeUpActivityHandler _handler ]
+"284
+[; ;mcc_generated_files/can/src/can1.c: 284:     }
+}
+[e :U 3330 ]
+"285
+[; ;mcc_generated_files/can/src/can1.c: 285: }
+[e :UE 3329 ]
+}
+"287
+[; ;mcc_generated_files/can/src/can1.c: 287: void CAN1_BusErrorCallbackRegister(void (*handler)(void))
+[v _CAN1_BusErrorCallbackRegister `(v ~T0 @X0 1 ef1`*F23632 ]
+"288
+[; ;mcc_generated_files/can/src/can1.c: 288: {
+{
+[e :U _CAN1_BusErrorCallbackRegister ]
+"287
+[; ;mcc_generated_files/can/src/can1.c: 287: void CAN1_BusErrorCallbackRegister(void (*handler)(void))
+[v _handler `*F23634 ~T0 @X0 1 r1 ]
+"288
+[; ;mcc_generated_files/can/src/can1.c: 288: {
+[f ]
+"289
+[; ;mcc_generated_files/can/src/can1.c: 289:     if(handler != ((void*)0))
+[e $ ! != _handler -> -> -> 0 `i `*v `*F23635 3332  ]
+"290
+[; ;mcc_generated_files/can/src/can1.c: 290:     {
+{
+"291
+[; ;mcc_generated_files/can/src/can1.c: 291:         CAN1_BusErrorHandler = handler;
+[e = _CAN1_BusErrorHandler _handler ]
+"292
+[; ;mcc_generated_files/can/src/can1.c: 292:     }
+}
+[e :U 3332 ]
+"293
+[; ;mcc_generated_files/can/src/can1.c: 293: }
+[e :UE 3331 ]
+}
+"295
+[; ;mcc_generated_files/can/src/can1.c: 295: void CAN1_ModeChangeCallbackRegister(void (*handler)(void))
+[v _CAN1_ModeChangeCallbackRegister `(v ~T0 @X0 1 ef1`*F23638 ]
+"296
+[; ;mcc_generated_files/can/src/can1.c: 296: {
+{
+[e :U _CAN1_ModeChangeCallbackRegister ]
+"295
+[; ;mcc_generated_files/can/src/can1.c: 295: void CAN1_ModeChangeCallbackRegister(void (*handler)(void))
+[v _handler `*F23640 ~T0 @X0 1 r1 ]
+"296
+[; ;mcc_generated_files/can/src/can1.c: 296: {
+[f ]
+"297
+[; ;mcc_generated_files/can/src/can1.c: 297:     if(handler != ((void*)0))
+[e $ ! != _handler -> -> -> 0 `i `*v `*F23641 3334  ]
+"298
+[; ;mcc_generated_files/can/src/can1.c: 298:     {
+{
+"299
+[; ;mcc_generated_files/can/src/can1.c: 299:         CAN1_ModeChangeHandler = handler;
+[e = _CAN1_ModeChangeHandler _handler ]
+"300
+[; ;mcc_generated_files/can/src/can1.c: 300:     }
+}
+[e :U 3334 ]
+"301
+[; ;mcc_generated_files/can/src/can1.c: 301: }
+[e :UE 3333 ]
+}
+"303
+[; ;mcc_generated_files/can/src/can1.c: 303: void CAN1_SystemErrorCallbackRegister(void (*handler)(void))
+[v _CAN1_SystemErrorCallbackRegister `(v ~T0 @X0 1 ef1`*F23644 ]
+"304
+[; ;mcc_generated_files/can/src/can1.c: 304: {
+{
+[e :U _CAN1_SystemErrorCallbackRegister ]
+"303
+[; ;mcc_generated_files/can/src/can1.c: 303: void CAN1_SystemErrorCallbackRegister(void (*handler)(void))
+[v _handler `*F23646 ~T0 @X0 1 r1 ]
+"304
+[; ;mcc_generated_files/can/src/can1.c: 304: {
+[f ]
+"305
+[; ;mcc_generated_files/can/src/can1.c: 305:     if(handler != ((void*)0))
+[e $ ! != _handler -> -> -> 0 `i `*v `*F23647 3336  ]
+"306
+[; ;mcc_generated_files/can/src/can1.c: 306:     {
+{
+"307
+[; ;mcc_generated_files/can/src/can1.c: 307:         CAN1_SystemErrorHandler = handler;
+[e = _CAN1_SystemErrorHandler _handler ]
+"308
+[; ;mcc_generated_files/can/src/can1.c: 308:     }
+}
+[e :U 3336 ]
+"309
+[; ;mcc_generated_files/can/src/can1.c: 309: }
+[e :UE 3335 ]
+}
+"313
+[; ;mcc_generated_files/can/src/can1.c: 313: void CAN1_InformationISR(void)
+[v _CAN1_InformationISR `(v ~T0 @X0 1 ef ]
+"314
+[; ;mcc_generated_files/can/src/can1.c: 314: {
+{
+[e :U _CAN1_InformationISR ]
+[f ]
+"316
+[; ;mcc_generated_files/can/src/can1.c: 316:     if(1 == C1INTHbits.WAKIF)
+[e $ ! == -> 1 `i -> . . _C1INTHbits 0 5 `i 3338  ]
+"317
+[; ;mcc_generated_files/can/src/can1.c: 317:     {
+{
+"318
+[; ;mcc_generated_files/can/src/can1.c: 318:         if(CAN1_BusWakeUpActivityHandler != ((void*)0))
+[e $ ! != _CAN1_BusWakeUpActivityHandler -> -> -> 0 `i `*v `*F23650 3339  ]
+"319
+[; ;mcc_generated_files/can/src/can1.c: 319:         {
+{
+"320
+[; ;mcc_generated_files/can/src/can1.c: 320:             CAN1_BusWakeUpActivityHandler();
+[e ( *U _CAN1_BusWakeUpActivityHandler ..  ]
+"321
+[; ;mcc_generated_files/can/src/can1.c: 321:         }
+}
+[e :U 3339 ]
+"323
+[; ;mcc_generated_files/can/src/can1.c: 323:         C1INTHbits.WAKIF = 0;
+[e = . . _C1INTHbits 0 5 -> -> 0 `i `uc ]
+"324
+[; ;mcc_generated_files/can/src/can1.c: 324:     }
+}
+[e :U 3338 ]
+"326
+[; ;mcc_generated_files/can/src/can1.c: 326:     PIR0bits.CANIF = 0;
+[e = . . _PIR0bits 0 6 -> -> 0 `i `uc ]
+"327
+[; ;mcc_generated_files/can/src/can1.c: 327: }
+[e :UE 3337 ]
+}
+"329
+[; ;mcc_generated_files/can/src/can1.c: 329: void CAN1_Tasks(void)
+[v _CAN1_Tasks `(v ~T0 @X0 1 ef ]
+"330
+[; ;mcc_generated_files/can/src/can1.c: 330: {
+{
+[e :U _CAN1_Tasks ]
+[f ]
+"332
+[; ;mcc_generated_files/can/src/can1.c: 332:     if(1 == C1INTHbits.IVMIF)
+[e $ ! == -> 1 `i -> . . _C1INTHbits 0 6 `i 3341  ]
+"333
+[; ;mcc_generated_files/can/src/can1.c: 333:     {
+{
+"334
+[; ;mcc_generated_files/can/src/can1.c: 334:         if(CAN1_InvalidMessageHandler != ((void*)0))
+[e $ ! != _CAN1_InvalidMessageHandler -> -> -> 0 `i `*v `*F23652 3342  ]
+"335
+[; ;mcc_generated_files/can/src/can1.c: 335:         {
+{
+"336
+[; ;mcc_generated_files/can/src/can1.c: 336:             CAN1_InvalidMessageHandler();
+[e ( *U _CAN1_InvalidMessageHandler ..  ]
+"337
+[; ;mcc_generated_files/can/src/can1.c: 337:         }
+}
+[e :U 3342 ]
+"339
+[; ;mcc_generated_files/can/src/can1.c: 339:         C1INTHbits.IVMIF = 0;
+[e = . . _C1INTHbits 0 6 -> -> 0 `i `uc ]
+"340
+[; ;mcc_generated_files/can/src/can1.c: 340:     }
+}
+[e :U 3341 ]
+"342
+[; ;mcc_generated_files/can/src/can1.c: 342:     if(1 == C1INTHbits.CERRIF)
+[e $ ! == -> 1 `i -> . . _C1INTHbits 0 4 `i 3343  ]
+"343
+[; ;mcc_generated_files/can/src/can1.c: 343:     {
+{
+"344
+[; ;mcc_generated_files/can/src/can1.c: 344:         if(CAN1_BusErrorHandler != ((void*)0))
+[e $ ! != _CAN1_BusErrorHandler -> -> -> 0 `i `*v `*F23653 3344  ]
+"345
+[; ;mcc_generated_files/can/src/can1.c: 345:         {
+{
+"346
+[; ;mcc_generated_files/can/src/can1.c: 346:             CAN1_BusErrorHandler();
+[e ( *U _CAN1_BusErrorHandler ..  ]
+"347
+[; ;mcc_generated_files/can/src/can1.c: 347:         }
+}
+[e :U 3344 ]
+"349
+[; ;mcc_generated_files/can/src/can1.c: 349:         C1INTHbits.CERRIF = 0;
+[e = . . _C1INTHbits 0 4 -> -> 0 `i `uc ]
+"350
+[; ;mcc_generated_files/can/src/can1.c: 350:     }
+}
+[e :U 3343 ]
+"352
+[; ;mcc_generated_files/can/src/can1.c: 352:     if(1 == C1INTLbits.MODIF)
+[e $ ! == -> 1 `i -> . . _C1INTLbits 0 3 `i 3345  ]
+"353
+[; ;mcc_generated_files/can/src/can1.c: 353:     {
+{
+"354
+[; ;mcc_generated_files/can/src/can1.c: 354:         if(CAN1_ModeChangeHandler != ((void*)0))
+[e $ ! != _CAN1_ModeChangeHandler -> -> -> 0 `i `*v `*F23654 3346  ]
+"355
+[; ;mcc_generated_files/can/src/can1.c: 355:         {
+{
+"356
+[; ;mcc_generated_files/can/src/can1.c: 356:             CAN1_ModeChangeHandler();
+[e ( *U _CAN1_ModeChangeHandler ..  ]
+"357
+[; ;mcc_generated_files/can/src/can1.c: 357:         }
+}
+[e :U 3346 ]
+"359
+[; ;mcc_generated_files/can/src/can1.c: 359:         C1INTLbits.MODIF = 0;
+[e = . . _C1INTLbits 0 3 -> -> 0 `i `uc ]
+"360
+[; ;mcc_generated_files/can/src/can1.c: 360:     }
+}
+[e :U 3345 ]
+"362
+[; ;mcc_generated_files/can/src/can1.c: 362:     if(1 == C1INTHbits.SERRIF)
+[e $ ! == -> 1 `i -> . . _C1INTHbits 0 3 `i 3347  ]
+"363
+[; ;mcc_generated_files/can/src/can1.c: 363:     {
+{
+"364
+[; ;mcc_generated_files/can/src/can1.c: 364:         if(CAN1_SystemErrorHandler != ((void*)0))
+[e $ ! != _CAN1_SystemErrorHandler -> -> -> 0 `i `*v `*F23655 3348  ]
+"365
+[; ;mcc_generated_files/can/src/can1.c: 365:         {
+{
+"366
+[; ;mcc_generated_files/can/src/can1.c: 366:             CAN1_SystemErrorHandler();
+[e ( *U _CAN1_SystemErrorHandler ..  ]
+"367
+[; ;mcc_generated_files/can/src/can1.c: 367:         }
+}
+[e :U 3348 ]
+"369
+[; ;mcc_generated_files/can/src/can1.c: 369:         C1INTHbits.SERRIF = 0;
+[e = . . _C1INTHbits 0 3 -> -> 0 `i `uc ]
+"370
+[; ;mcc_generated_files/can/src/can1.c: 370:     }
+}
+[e :U 3347 ]
+"371
+[; ;mcc_generated_files/can/src/can1.c: 371: }
+[e :UE 3340 ]
 }

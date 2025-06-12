@@ -1,4 +1,4 @@
-# 1 "mcc_generated_files/system/src/interrupt.c"
+# 1 "mcc_generated_files/can/src/can1.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,45 +6,87 @@
 # 1 "<built-in>" 2
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "mcc_generated_files/system/src/interrupt.c" 2
-# 34 "mcc_generated_files/system/src/interrupt.c"
-# 1 "mcc_generated_files/system/src/../../system/interrupt.h" 1
-# 69 "mcc_generated_files/system/src/../../system/interrupt.h"
-void INTERRUPT_Initialize (void);
-# 218 "mcc_generated_files/system/src/../../system/interrupt.h"
-void INT0_ISR(void);
-# 227 "mcc_generated_files/system/src/../../system/interrupt.h"
-void INT0_CallBack(void);
-# 236 "mcc_generated_files/system/src/../../system/interrupt.h"
-void INT0_SetInterruptHandler(void (* InterruptHandler)(void));
-# 246 "mcc_generated_files/system/src/../../system/interrupt.h"
-extern void (*INT0_InterruptHandler)(void);
-# 255 "mcc_generated_files/system/src/../../system/interrupt.h"
-void INT0_DefaultInterruptHandler(void);
-# 264 "mcc_generated_files/system/src/../../system/interrupt.h"
-void INT1_ISR(void);
-# 273 "mcc_generated_files/system/src/../../system/interrupt.h"
-void INT1_CallBack(void);
-# 282 "mcc_generated_files/system/src/../../system/interrupt.h"
-void INT1_SetInterruptHandler(void (* InterruptHandler)(void));
-# 292 "mcc_generated_files/system/src/../../system/interrupt.h"
-extern void (*INT1_InterruptHandler)(void);
-# 301 "mcc_generated_files/system/src/../../system/interrupt.h"
-void INT1_DefaultInterruptHandler(void);
-# 310 "mcc_generated_files/system/src/../../system/interrupt.h"
-void INT2_ISR(void);
-# 319 "mcc_generated_files/system/src/../../system/interrupt.h"
-void INT2_CallBack(void);
-# 328 "mcc_generated_files/system/src/../../system/interrupt.h"
-void INT2_SetInterruptHandler(void (* InterruptHandler)(void));
-# 338 "mcc_generated_files/system/src/../../system/interrupt.h"
-extern void (*INT2_InterruptHandler)(void);
-# 347 "mcc_generated_files/system/src/../../system/interrupt.h"
-void INT2_DefaultInterruptHandler(void);
-# 34 "mcc_generated_files/system/src/interrupt.c" 2
+# 1 "mcc_generated_files/can/src/can1.c" 2
+# 34 "mcc_generated_files/can/src/can1.c"
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\string.h" 1 3
 
-# 1 "mcc_generated_files/system/src/../../system/system.h" 1
-# 39 "mcc_generated_files/system/src/../../system/system.h"
+
+
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\musl_xc8.h" 1 3
+# 5 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\string.h" 2 3
+
+
+
+
+
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\features.h" 1 3
+# 11 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\string.h" 2 3
+# 25 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\string.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 1 3
+# 128 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef unsigned size_t;
+# 174 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef __int24 int24_t;
+# 210 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef __uint24 uint24_t;
+# 421 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef struct __locale_struct * locale_t;
+# 26 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\string.h" 2 3
+
+void *memcpy (void *restrict, const void *restrict, size_t);
+void *memmove (void *, const void *, size_t);
+void *memset (void *, int, size_t);
+int memcmp (const void *, const void *, size_t);
+void *memchr (const void *, int, size_t);
+
+char *strcpy (char *restrict, const char *restrict);
+char *strncpy (char *restrict, const char *restrict, size_t);
+
+char *strcat (char *restrict, const char *restrict);
+char *strncat (char *restrict, const char *restrict, size_t);
+
+int strcmp (const char *, const char *);
+int strncmp (const char *, const char *, size_t);
+
+int strcoll (const char *, const char *);
+size_t strxfrm (char *restrict, const char *restrict, size_t);
+
+char *strchr (const char *, int);
+char *strrchr (const char *, int);
+
+size_t strcspn (const char *, const char *);
+size_t strspn (const char *, const char *);
+char *strpbrk (const char *, const char *);
+char *strstr (const char *, const char *);
+char *strtok (char *restrict, const char *restrict);
+
+size_t strlen (const char *);
+
+char *strerror (int);
+
+
+
+
+char *strtok_r (char *restrict, const char *restrict, char **restrict);
+int strerror_r (int, char *, size_t);
+char *stpcpy(char *restrict, const char *restrict);
+char *stpncpy(char *restrict, const char *restrict, size_t);
+size_t strnlen (const char *, size_t);
+char *strdup (const char *);
+char *strndup (const char *, size_t);
+char *strsignal(int);
+char *strerror_l (int, locale_t);
+int strcoll_l (const char *, const char *, locale_t);
+size_t strxfrm_l (char *restrict, const char *restrict, size_t, locale_t);
+
+
+
+
+void *memccpy (void *restrict, const void *restrict, int, size_t);
+# 34 "mcc_generated_files/can/src/can1.c" 2
+
+# 1 "mcc_generated_files/can/src/../can1.h" 1
+# 37 "mcc_generated_files/can/src/../can1.h"
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\xc.h" 1 3
 # 18 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -58,28 +100,10 @@ extern double __fpnormalize(double);
 
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stdlib.h" 1 3
-
-
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\musl_xc8.h" 1 3
-# 5 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stdlib.h" 2 3
-
-
-
-
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\features.h" 1 3
-# 11 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stdlib.h" 2 3
 # 21 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stdlib.h" 3
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 1 3
 # 24 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef long int wchar_t;
-# 128 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef unsigned size_t;
-# 174 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef __int24 int24_t;
-# 210 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef __uint24 uint24_t;
 # 22 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stdlib.h" 2 3
 
 int atoi (const char *);
@@ -39265,37 +39289,14 @@ __attribute__((__unsupported__("The READTIMER" "0" "() macro is not available wi
 unsigned char __t1rd16on(void);
 unsigned char __t3rd16on(void);
 # 33 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\xc.h" 2 3
-# 39 "mcc_generated_files/system/src/../../system/system.h" 2
-
+# 37 "mcc_generated_files/can/src/../can1.h" 2
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stdbool.h" 1 3
-# 41 "mcc_generated_files/system/src/../../system/system.h" 2
-
-# 1 "mcc_generated_files/system/src/../../system/../system/config_bits.h" 1
-# 39 "mcc_generated_files/system/src/../../system/../system/config_bits.h"
-# 1 "mcc_generated_files/system/src/../../system/../system/clock.h" 1
-# 56 "mcc_generated_files/system/src/../../system/../system/clock.h"
-void CLOCK_Initialize(void);
-# 39 "mcc_generated_files/system/src/../../system/../system/config_bits.h" 2
-# 42 "mcc_generated_files/system/src/../../system/system.h" 2
-
-# 1 "mcc_generated_files/system/src/../../system/../system/pins.h" 1
-# 78 "mcc_generated_files/system/src/../../system/../system/pins.h"
-void PIN_MANAGER_Initialize (void);
+# 38 "mcc_generated_files/can/src/../can1.h" 2
 
 
-
-
-
-
-
-void PIN_MANAGER_IOC(void);
-# 43 "mcc_generated_files/system/src/../../system/system.h" 2
-
-# 1 "mcc_generated_files/system/src/../../system/../can/can1.h" 1
-# 40 "mcc_generated_files/system/src/../../system/../can/can1.h"
-# 1 "mcc_generated_files/system/src/../../system/../can/can_types.h" 1
-# 45 "mcc_generated_files/system/src/../../system/../can/can_types.h"
+# 1 "mcc_generated_files/can/src/../can_types.h" 1
+# 45 "mcc_generated_files/can/src/../can_types.h"
 enum CAN_TX_FIFO_CHANNELS
 {
     CAN_TX_FIFO_MAX
@@ -39470,10 +39471,10 @@ enum CAN_DLC
     DLC_48,
     DLC_64
 };
-# 40 "mcc_generated_files/system/src/../../system/../can/can1.h" 2
+# 40 "mcc_generated_files/can/src/../can1.h" 2
 
-# 1 "mcc_generated_files/system/src/../../system/../can/can_interface.h" 1
-# 46 "mcc_generated_files/system/src/../../system/../can/can_interface.h"
+# 1 "mcc_generated_files/can/src/../can_interface.h" 1
+# 46 "mcc_generated_files/can/src/../can_interface.h"
 struct CAN_INTERFACE
 {
     void (*Initialize)(void);
@@ -39554,7 +39555,7 @@ struct CAN_INTERFACE
     void (*Tasks)(void);
 
 };
-# 41 "mcc_generated_files/system/src/../../system/../can/can1.h" 2
+# 41 "mcc_generated_files/can/src/../can1.h" 2
 
 
 
@@ -39563,7 +39564,7 @@ struct CAN_INTERFACE
 
 
 extern const struct CAN_INTERFACE CAN_FD1;
-# 117 "mcc_generated_files/system/src/../../system/../can/can1.h"
+# 117 "mcc_generated_files/can/src/../can1.h"
 void CAN1_Initialize(void);
 
 
@@ -39573,13 +39574,13 @@ void CAN1_Initialize(void);
 
 
 void CAN1_Deinitialize(void);
-# 134 "mcc_generated_files/system/src/../../system/../can/can1.h"
+# 134 "mcc_generated_files/can/src/../can1.h"
 enum CAN_OP_MODE_STATUS CAN1_OperationModeSet(const enum CAN_OP_MODES requestMode);
-# 143 "mcc_generated_files/system/src/../../system/../can/can1.h"
+# 143 "mcc_generated_files/can/src/../can1.h"
 enum CAN_OP_MODES CAN1_OperationModeGet(void);
-# 153 "mcc_generated_files/system/src/../../system/../can/can1.h"
+# 153 "mcc_generated_files/can/src/../can1.h"
 _Bool CAN1_IsBusOff(void);
-# 162 "mcc_generated_files/system/src/../../system/../can/can1.h"
+# 162 "mcc_generated_files/can/src/../can1.h"
 void CAN1_Sleep(void);
 
 
@@ -39621,7 +39622,7 @@ void CAN1_ModeChangeCallbackRegister(void (*handler)(void));
 
 
 void CAN1_SystemErrorCallbackRegister(void (*handler)(void));
-# 213 "mcc_generated_files/system/src/../../system/../can/can1.h"
+# 213 "mcc_generated_files/can/src/../can1.h"
 void CAN1_Tasks(void);
 
 
@@ -39631,136 +39632,307 @@ void CAN1_Tasks(void);
 
 
 void CAN1_InformationISR(void);
-# 44 "mcc_generated_files/system/src/../../system/system.h" 2
-# 54 "mcc_generated_files/system/src/../../system/system.h"
-void SYSTEM_Initialize(void);
-# 35 "mcc_generated_files/system/src/interrupt.c" 2
+# 35 "mcc_generated_files/can/src/can1.c" 2
+# 70 "mcc_generated_files/can/src/can1.c"
+struct CAN1_FIFOREG
+{
+    uint8_t CONL;
+    uint8_t CONH;
+    uint8_t CONU;
+    uint8_t CONT;
+    uint8_t STAL;
+    uint8_t STAH;
+    uint8_t STAU;
+    uint8_t STAT;
+    uint32_t UA;
+};
+
+
+const struct CAN_INTERFACE CAN_FD1 = {
+    .Initialize = CAN1_Initialize,
+    .Deinitialize = CAN1_Deinitialize,
+    .OperationModeSet = CAN1_OperationModeSet,
+    .OperationModeGet = CAN1_OperationModeGet,
+    .Transmit = ((void*)0),
+    .TransmitFIFOStatusGet = ((void*)0),
+    .IsTxErrorPassive = ((void*)0),
+    .IsTxErrorWarning = ((void*)0),
+    .IsTxErrorActive = ((void*)0),
+    .Receive = ((void*)0),
+    .ReceiveMessageGet = ((void*)0),
+    .ReceivedMessageCountGet = ((void*)0),
+    .ReceiveFIFOStatusGet = ((void*)0),
+    .IsRxErrorPassive = ((void*)0),
+    .IsRxErrorWarning = ((void*)0),
+    .IsRxErrorActive = ((void*)0),
+    .IsBusOff = CAN1_IsBusOff,
+    .SleepMode = CAN1_Sleep,
+    .InvalidMessageCallbackRegister = CAN1_InvalidMessageCallbackRegister,
+    .BusWakeUpActivityCallbackRegister = CAN1_BusWakeUpActivityCallbackRegister,
+    .BusErrorCallbackRegister = CAN1_BusErrorCallbackRegister,
+    .ModeChangeCallbackRegister = CAN1_ModeChangeCallbackRegister,
+    .SystemErrorCallbackRegister = CAN1_SystemErrorCallbackRegister,
+    .TxAttemptCallbackRegister = ((void*)0),
+    .RxBufferOverFlowCallbackRegister = ((void*)0),
+    .Tasks = CAN1_Tasks
+};
+
+
+static void (*CAN1_InvalidMessageHandler)(void) = ((void*)0);
+static void (*CAN1_BusWakeUpActivityHandler)(void) = ((void*)0);
+static void (*CAN1_BusErrorHandler)(void) = ((void*)0);
+static void (*CAN1_ModeChangeHandler)(void) = ((void*)0);
+static void (*CAN1_SystemErrorHandler)(void) = ((void*)0);
+
+
+static volatile struct CAN1_FIFOREG * const FIFO = (struct CAN1_FIFOREG *)&C1TXQCONL;
 
 
 
-void (*INT0_InterruptHandler)(void);
-void (*INT1_InterruptHandler)(void);
-void (*INT2_InterruptHandler)(void);
 
-void INTERRUPT_Initialize (void)
+
+
+
+static void CAN1_BitRateConfiguration(void)
 {
 
-    INTCON0bits.IPEN = 0;
+    C1NBTCFGL = 0x7F;
 
+    C1NBTCFGH = 0x7F;
 
+    C1NBTCFGU = 0x7E;
 
-    (PIR1bits.INT0IF = 0);
-    (INTCON0bits.INT0EDG = 1);
+    C1NBTCFGT = 0x1;
 
-    INT0_SetInterruptHandler(INT0_DefaultInterruptHandler);
+    C1DBTCFGL = 0x0;
 
+    C1DBTCFGH = 0x0;
 
+    C1DBTCFGU = 0x0;
 
+    C1DBTCFGT = 0x0;
 
-    (PIR6bits.INT1IF = 0);
-    (INTCON0bits.INT1EDG = 1);
+    C1TDCL = 0x0;
 
-    INT1_SetInterruptHandler(INT1_DefaultInterruptHandler);
+    C1TDCH = 0x0;
 
+    C1TDCU = 0x0;
 
-
-
-    (PIR10bits.INT2IF = 0);
-    (INTCON0bits.INT2EDG = 1);
-
-    INT2_SetInterruptHandler(INT2_DefaultInterruptHandler);
-
-
+    C1TDCT = 0x0;
 }
-# 80 "mcc_generated_files/system/src/interrupt.c"
-void __attribute__((picinterrupt(("")))) INTERRUPT_InterruptManager (void)
+
+
+void CAN1_Initialize(void)
 {
 
-    if(PIE0bits.CANIE == 1 && PIR0bits.CANIF == 1)
+    C1CONHbits.ON = 1;
+
+
+    C1CONT = 0x4;
+
+
+    C1CONU = 0x80;
+
+
+    if (CAN_OP_MODE_REQUEST_SUCCESS == CAN1_OperationModeSet(CAN_CONFIGURATION_MODE))
     {
-        CAN1_InformationISR();
+
+        C1CONH = 0x97;
+
+
+        C1CONL = 0x60;
+
+
+        C1CONUbits.STEF = 0;
+
+        C1CONUbits.TXQEN = 0;
+
+
+        CAN1_BitRateConfiguration();
+
+
+        (void)CAN1_OperationModeSet(CAN_NORMAL_FD_MODE);
+    }
+}
+
+void CAN1_Deinitialize(void)
+{
+
+    if(CAN_OP_MODE_REQUEST_SUCCESS == CAN1_OperationModeSet(CAN_CONFIGURATION_MODE))
+    {
+        C1CONL = 0x60;
+        C1CONH = 0x7;
+        C1CONU = 0x98;
+        C1CONT = 0x4;
+
+
+        C1NBTCFGL = 0xF;
+        C1NBTCFGH = 0xF;
+        C1NBTCFGU = 0x3E;
+        C1NBTCFGT = 0x0;
+        C1DBTCFGL = 0x3;
+        C1DBTCFGH = 0x3;
+        C1DBTCFGU = 0xE;
+        C1DBTCFGT = 0x0;
+        C1TDCL = 0x0;
+        C1TDCH = 0x10;
+        C1TDCU = 0x2;
+        C1TDCT = 0x0;
+
+    }
+
+
+    C1CONHbits.ON = 0;
+}
+
+enum CAN_OP_MODE_STATUS CAN1_OperationModeSet(const enum CAN_OP_MODES requestMode)
+{
+    enum CAN_OP_MODE_STATUS status = CAN_OP_MODE_REQUEST_SUCCESS;
+
+    if ((CAN1_OperationModeGet() == CAN_CONFIGURATION_MODE)
+        || (requestMode == CAN_DISABLE_MODE)
+        || (requestMode == CAN_CONFIGURATION_MODE))
+    {
+        C1CONTbits.REQOP = requestMode;
+
+        while (C1CONUbits.OPMOD != requestMode)
+        {
+
+            if (C1INTHbits.SERRIF == 1)
+            {
+                status = CAN_OP_MODE_SYS_ERROR_OCCURED;
+                break;
+            }
+        }
     }
     else
     {
-
+        status = CAN_OP_MODE_REQUEST_FAIL;
     }
+
+    return status;
 }
 
-void INT0_ISR(void)
+enum CAN_OP_MODES CAN1_OperationModeGet(void)
 {
-    (PIR1bits.INT0IF = 0);
-
-
-    INT0_CallBack();
+    return C1CONUbits.OPMOD;
 }
 
-
-void INT0_CallBack(void)
+_Bool CAN1_IsBusOff(void)
 {
+    return C1TRECUbits.TXBO;
+}
 
-    if(INT0_InterruptHandler)
+void CAN1_Sleep(void)
+{
+    C1INTHbits.WAKIF = 0;
+    C1INTTbits.WAKIE = 1;
+
+
+    PIE0bits.CANIE = 1;
+
+
+    (void)CAN1_OperationModeSet(CAN_DISABLE_MODE);
+}
+
+void CAN1_InvalidMessageCallbackRegister(void (*handler)(void))
+{
+    if(handler != ((void*)0))
     {
-        INT0_InterruptHandler();
+        CAN1_InvalidMessageHandler = handler;
     }
 }
 
-void INT0_SetInterruptHandler(void (* InterruptHandler)(void)){
-    INT0_InterruptHandler = InterruptHandler;
-}
-
-void INT0_DefaultInterruptHandler(void){
-
-
-}
-void INT1_ISR(void)
+void CAN1_BusWakeUpActivityCallbackRegister(void (*handler)(void))
 {
-    (PIR6bits.INT1IF = 0);
-
-
-    INT1_CallBack();
-}
-
-
-void INT1_CallBack(void)
-{
-
-    if(INT1_InterruptHandler)
+    if(handler != ((void*)0))
     {
-        INT1_InterruptHandler();
+        CAN1_BusWakeUpActivityHandler = handler;
     }
 }
 
-void INT1_SetInterruptHandler(void (* InterruptHandler)(void)){
-    INT1_InterruptHandler = InterruptHandler;
-}
-
-void INT1_DefaultInterruptHandler(void){
-
-
-}
-void INT2_ISR(void)
+void CAN1_BusErrorCallbackRegister(void (*handler)(void))
 {
-    (PIR10bits.INT2IF = 0);
-
-
-    INT2_CallBack();
-}
-
-
-void INT2_CallBack(void)
-{
-
-    if(INT2_InterruptHandler)
+    if(handler != ((void*)0))
     {
-        INT2_InterruptHandler();
+        CAN1_BusErrorHandler = handler;
     }
 }
 
-void INT2_SetInterruptHandler(void (* InterruptHandler)(void)){
-    INT2_InterruptHandler = InterruptHandler;
+void CAN1_ModeChangeCallbackRegister(void (*handler)(void))
+{
+    if(handler != ((void*)0))
+    {
+        CAN1_ModeChangeHandler = handler;
+    }
 }
 
-void INT2_DefaultInterruptHandler(void){
+void CAN1_SystemErrorCallbackRegister(void (*handler)(void))
+{
+    if(handler != ((void*)0))
+    {
+        CAN1_SystemErrorHandler = handler;
+    }
+}
 
 
+
+void CAN1_InformationISR(void)
+{
+
+    if(1 == C1INTHbits.WAKIF)
+    {
+        if(CAN1_BusWakeUpActivityHandler != ((void*)0))
+        {
+            CAN1_BusWakeUpActivityHandler();
+        }
+
+        C1INTHbits.WAKIF = 0;
+    }
+
+    PIR0bits.CANIF = 0;
+}
+
+void CAN1_Tasks(void)
+{
+
+    if(1 == C1INTHbits.IVMIF)
+    {
+        if(CAN1_InvalidMessageHandler != ((void*)0))
+        {
+            CAN1_InvalidMessageHandler();
+        }
+
+        C1INTHbits.IVMIF = 0;
+    }
+
+    if(1 == C1INTHbits.CERRIF)
+    {
+        if(CAN1_BusErrorHandler != ((void*)0))
+        {
+            CAN1_BusErrorHandler();
+        }
+
+        C1INTHbits.CERRIF = 0;
+    }
+
+    if(1 == C1INTLbits.MODIF)
+    {
+        if(CAN1_ModeChangeHandler != ((void*)0))
+        {
+            CAN1_ModeChangeHandler();
+        }
+
+        C1INTLbits.MODIF = 0;
+    }
+
+    if(1 == C1INTHbits.SERRIF)
+    {
+        if(CAN1_SystemErrorHandler != ((void*)0))
+        {
+            CAN1_SystemErrorHandler();
+        }
+
+        C1INTHbits.SERRIF = 0;
+    }
 }

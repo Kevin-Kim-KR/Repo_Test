@@ -39245,7 +39245,7 @@ void CLOCK_Initialize(void);
 # 42 "mcc_generated_files/system/src/../system.h" 2
 
 # 1 "mcc_generated_files/system/src/../../system/pins.h" 1
-# 58 "mcc_generated_files/system/src/../../system/pins.h"
+# 78 "mcc_generated_files/system/src/../../system/pins.h"
 void PIN_MANAGER_Initialize (void);
 
 
@@ -39256,6 +39256,347 @@ void PIN_MANAGER_Initialize (void);
 
 void PIN_MANAGER_IOC(void);
 # 43 "mcc_generated_files/system/src/../system.h" 2
+
+# 1 "mcc_generated_files/system/src/../../can/can1.h" 1
+# 40 "mcc_generated_files/system/src/../../can/can1.h"
+# 1 "mcc_generated_files/system/src/../../can/can_types.h" 1
+# 45 "mcc_generated_files/system/src/../../can/can_types.h"
+enum CAN_TX_FIFO_CHANNELS
+{
+    CAN_TX_FIFO_MAX
+};
+
+
+
+
+
+
+enum CAN_RX_FIFO_CHANNELS
+{
+    CAN_RX_FIFO_MAX
+};
+
+
+
+
+
+
+struct CAN_MSG_FIELD
+{
+    uint8_t idType:1;
+    uint8_t frameType:1;
+    uint8_t dlc:4;
+    uint8_t formatType:1;
+    uint8_t brs:1;
+};
+
+
+
+
+
+
+struct CAN_MSG_OBJ
+{
+    uint32_t msgId;
+    struct CAN_MSG_FIELD field;
+    uint8_t *data;
+};
+
+
+
+
+
+
+enum CAN_MSG_OBJ_BRS_MODE
+{
+    CAN_NON_BRS_MODE = 0,
+    CAN_BRS_MODE = 1
+};
+
+
+
+
+
+
+enum CAN_MSG_OBJ_ID_TYPE
+{
+    CAN_FRAME_STD = 0,
+    CAN_FRAME_EXT = 1
+};
+
+
+
+
+
+
+enum CAN_MSG_OBJ_FRAME_TYPE
+{
+    CAN_FRAME_DATA = 0,
+    CAN_FRAME_RTR = 1
+};
+
+
+
+
+
+
+enum CAN_MSG_OBJ_TYPE
+{
+    CAN_2_0_FORMAT = 0,
+    CAN_FD_FORMAT = 1
+};
+
+
+
+
+
+
+enum CAN_TX_MSG_REQUEST_STATUS
+{
+    CAN_TX_MSG_REQUEST_SUCCESS = 0,
+    CAN_TX_MSG_REQUEST_DLC_EXCEED_ERROR = 1,
+    CAN_TX_MSG_REQUEST_BRS_ERROR = 2,
+    CAN_TX_MSG_REQUEST_FIFO_FULL = 3
+};
+
+
+
+
+
+
+enum CAN_OP_MODES
+{
+    CAN_NORMAL_FD_MODE = 0x0,
+    CAN_DISABLE_MODE = 0x1,
+    CAN_INTERNAL_LOOPBACK_MODE = 0x2,
+    CAN_LISTEN_ONLY_MODE = 0x3,
+    CAN_CONFIGURATION_MODE = 0x4,
+    CAN_EXTERNAL_LOOPBACK_MODE = 0x5,
+    CAN_NORMAL_2_0_MODE = 0x6,
+    CAN_RESTRICTED_OPERATION_MODE =0x7
+};
+
+
+
+
+
+
+enum CAN_OP_MODE_STATUS
+{
+    CAN_OP_MODE_REQUEST_SUCCESS,
+    CAN_OP_MODE_REQUEST_FAIL,
+    CAN_OP_MODE_SYS_ERROR_OCCURED
+};
+
+
+
+
+
+
+enum CAN_TX_FIFO_STATUS
+{
+    CAN_TX_FIFO_FULL = 0x0,
+    CAN_TX_FIFO_AVAILABLE = 0x1
+};
+
+
+
+
+
+
+enum CAN_RX_FIFO_STATUS
+{
+    CAN_RX_MSG_NOT_AVAILABLE = 0x0,
+    CAN_RX_MSG_AVAILABLE = 0x1,
+    CAN_RX_MSG_OVERFLOW = 0x8
+};
+
+
+
+
+
+
+enum CAN_DLC
+{
+    DLC_0,
+    DLC_1,
+    DLC_2,
+    DLC_3,
+    DLC_4,
+    DLC_5,
+    DLC_6,
+    DLC_7,
+    DLC_8,
+    DLC_12,
+    DLC_16,
+    DLC_20,
+    DLC_24,
+    DLC_32,
+    DLC_48,
+    DLC_64
+};
+# 40 "mcc_generated_files/system/src/../../can/can1.h" 2
+
+# 1 "mcc_generated_files/system/src/../../can/can_interface.h" 1
+# 46 "mcc_generated_files/system/src/../../can/can_interface.h"
+struct CAN_INTERFACE
+{
+    void (*Initialize)(void);
+
+
+    void (*Deinitialize)(void);
+
+
+    enum CAN_OP_MODE_STATUS (*OperationModeSet)(const enum CAN_OP_MODES requestMode);
+
+
+    enum CAN_OP_MODES (*OperationModeGet)(void);
+
+
+    enum CAN_TX_MSG_REQUEST_STATUS (*Transmit)(const enum CAN_TX_FIFO_CHANNELS fifoChannel, struct CAN_MSG_OBJ *txCanMsg);
+
+
+    enum CAN_TX_FIFO_STATUS (*TransmitFIFOStatusGet)(const enum CAN_TX_FIFO_CHANNELS fifoChannel);
+
+
+    _Bool (*IsTxErrorPassive)(void);
+
+
+    _Bool (*IsTxErrorWarning)(void);
+
+
+    _Bool (*IsTxErrorActive)(void);
+
+
+    _Bool (*Receive)(struct CAN_MSG_OBJ *rxCanMsg);
+
+
+    _Bool (*ReceiveMessageGet)(const enum CAN_RX_FIFO_CHANNELS fifoChannel, struct CAN_MSG_OBJ *rxCanMsg);
+
+
+    uint8_t (*ReceivedMessageCountGet)(void);
+
+
+    uint8_t (*ReceiveFIFOStatusGet)(const enum CAN_RX_FIFO_CHANNELS fifoChannel);
+
+
+    _Bool (*IsRxErrorPassive)(void);
+
+
+    _Bool (*IsRxErrorWarning)(void);
+
+
+    _Bool (*IsRxErrorActive)(void);
+
+
+    _Bool (*IsBusOff)(void);
+
+
+    void (*SleepMode)(void);
+
+
+    void (*InvalidMessageCallbackRegister)(void (*CallbackHandler)(void));
+
+
+    void (*BusWakeUpActivityCallbackRegister)(void (*CallbackHandler)(void));
+
+
+    void (*BusErrorCallbackRegister)(void (*CallbackHandler)(void));
+
+
+    void (*ModeChangeCallbackRegister)(void (*CallbackHandler)(void));
+
+
+    void (*SystemErrorCallbackRegister)(void (*CallbackHandler)(void));
+
+
+    void (*TxAttemptCallbackRegister)(void (*CallbackHandler)(void));
+
+
+    void (*RxBufferOverFlowCallbackRegister)(void (*CallbackHandler)(void));
+
+
+    void (*Tasks)(void);
+
+};
+# 41 "mcc_generated_files/system/src/../../can/can1.h" 2
+
+
+
+
+
+
+
+extern const struct CAN_INTERFACE CAN_FD1;
+# 117 "mcc_generated_files/system/src/../../can/can1.h"
+void CAN1_Initialize(void);
+
+
+
+
+
+
+
+void CAN1_Deinitialize(void);
+# 134 "mcc_generated_files/system/src/../../can/can1.h"
+enum CAN_OP_MODE_STATUS CAN1_OperationModeSet(const enum CAN_OP_MODES requestMode);
+# 143 "mcc_generated_files/system/src/../../can/can1.h"
+enum CAN_OP_MODES CAN1_OperationModeGet(void);
+# 153 "mcc_generated_files/system/src/../../can/can1.h"
+_Bool CAN1_IsBusOff(void);
+# 162 "mcc_generated_files/system/src/../../can/can1.h"
+void CAN1_Sleep(void);
+
+
+
+
+
+
+
+void CAN1_InvalidMessageCallbackRegister(void (*handler)(void));
+
+
+
+
+
+
+
+void CAN1_BusWakeUpActivityCallbackRegister(void (*handler)(void));
+
+
+
+
+
+
+
+void CAN1_BusErrorCallbackRegister(void (*handler)(void));
+
+
+
+
+
+
+
+void CAN1_ModeChangeCallbackRegister(void (*handler)(void));
+
+
+
+
+
+
+
+void CAN1_SystemErrorCallbackRegister(void (*handler)(void));
+# 213 "mcc_generated_files/system/src/../../can/can1.h"
+void CAN1_Tasks(void);
+
+
+
+
+
+
+
+void CAN1_InformationISR(void);
+# 44 "mcc_generated_files/system/src/../system.h" 2
 
 # 1 "mcc_generated_files/system/src/../../system/interrupt.h" 1
 # 69 "mcc_generated_files/system/src/../../system/interrupt.h"
@@ -39290,8 +39631,8 @@ void INT2_SetInterruptHandler(void (* InterruptHandler)(void));
 extern void (*INT2_InterruptHandler)(void);
 # 347 "mcc_generated_files/system/src/../../system/interrupt.h"
 void INT2_DefaultInterruptHandler(void);
-# 44 "mcc_generated_files/system/src/../system.h" 2
-# 53 "mcc_generated_files/system/src/../system.h"
+# 45 "mcc_generated_files/system/src/../system.h" 2
+# 54 "mcc_generated_files/system/src/../system.h"
 void SYSTEM_Initialize(void);
 # 36 "mcc_generated_files/system/src/system.c" 2
 
@@ -39303,5 +39644,6 @@ void SYSTEM_Initialize(void)
 {
     CLOCK_Initialize();
     PIN_MANAGER_Initialize();
+    CAN1_Initialize();
     INTERRUPT_Initialize();
 }

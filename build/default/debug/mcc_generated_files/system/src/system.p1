@@ -2,9 +2,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 "56 mcc_generated_files/system/src/../../system/clock.h
 [; ;mcc_generated_files/system/src/../../system/clock.h: 56: void CLOCK_Initialize(void);
 [v _CLOCK_Initialize `(v ~T0 @X0 0 ef ]
-"58 mcc_generated_files/system/src/../../system/pins.h
-[; ;mcc_generated_files/system/src/../../system/pins.h: 58: void PIN_MANAGER_Initialize (void);
+"78 mcc_generated_files/system/src/../../system/pins.h
+[; ;mcc_generated_files/system/src/../../system/pins.h: 78: void PIN_MANAGER_Initialize (void);
 [v _PIN_MANAGER_Initialize `(v ~T0 @X0 0 ef ]
+"117 mcc_generated_files/system/src/../../can/can1.h
+[; ;mcc_generated_files/system/src/../../can/can1.h: 117: void CAN1_Initialize(void);
+[v _CAN1_Initialize `(v ~T0 @X0 0 ef ]
 "69 mcc_generated_files/system/src/../../system/interrupt.h
 [; ;mcc_generated_files/system/src/../../system/interrupt.h: 69: void INTERRUPT_Initialize (void);
 [v _INTERRUPT_Initialize `(v ~T0 @X0 0 ef ]
@@ -3665,9 +3668,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/system/src/system.c: 44:     PIN_MANAGER_Initialize();
 [e ( _PIN_MANAGER_Initialize ..  ]
 "45
-[; ;mcc_generated_files/system/src/system.c: 45:     INTERRUPT_Initialize();
-[e ( _INTERRUPT_Initialize ..  ]
+[; ;mcc_generated_files/system/src/system.c: 45:     CAN1_Initialize();
+[e ( _CAN1_Initialize ..  ]
 "46
-[; ;mcc_generated_files/system/src/system.c: 46: }
-[e :UE 3307 ]
+[; ;mcc_generated_files/system/src/system.c: 46:     INTERRUPT_Initialize();
+[e ( _INTERRUPT_Initialize ..  ]
+"47
+[; ;mcc_generated_files/system/src/system.c: 47: }
+[e :UE 3310 ]
 }

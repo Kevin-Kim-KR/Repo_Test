@@ -39230,7 +39230,7 @@ __attribute__((__unsupported__("The READTIMER" "0" "() macro is not available wi
 unsigned char __t1rd16on(void);
 unsigned char __t3rd16on(void);
 # 33 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\xc.h" 2 3
-# 38 "mcc_generated_files/system/src/../pins.h" 2
+# 39 "mcc_generated_files/system/src/../pins.h" 2
 # 78 "mcc_generated_files/system/src/../pins.h"
 void PIN_MANAGER_Initialize (void);
 
@@ -39241,8 +39241,7 @@ void PIN_MANAGER_Initialize (void);
 
 
 void PIN_MANAGER_IOC(void);
-# 35 "mcc_generated_files/system/src/pins.c" 2
-
+# 36 "mcc_generated_files/system/src/pins.c" 2
 
 
 void PIN_MANAGER_Initialize(void)

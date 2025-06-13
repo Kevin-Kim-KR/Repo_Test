@@ -83,8 +83,7 @@ size_t strxfrm_l (char *restrict, const char *restrict, size_t, locale_t);
 
 
 void *memccpy (void *restrict, const void *restrict, int, size_t);
-# 34 "mcc_generated_files/can/src/can1.c" 2
-
+# 35 "mcc_generated_files/can/src/can1.c" 2
 # 1 "mcc_generated_files/can/src/../can1.h" 1
 # 37 "mcc_generated_files/can/src/../can1.h"
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\xc.h" 1 3
@@ -39289,11 +39288,9 @@ __attribute__((__unsupported__("The READTIMER" "0" "() macro is not available wi
 unsigned char __t1rd16on(void);
 unsigned char __t3rd16on(void);
 # 33 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\xc.h" 2 3
-# 37 "mcc_generated_files/can/src/../can1.h" 2
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stdbool.h" 1 3
 # 38 "mcc_generated_files/can/src/../can1.h" 2
-
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stdbool.h" 1 3
+# 39 "mcc_generated_files/can/src/../can1.h" 2
 
 # 1 "mcc_generated_files/can/src/../can_types.h" 1
 # 45 "mcc_generated_files/can/src/../can_types.h"
@@ -39471,8 +39468,7 @@ enum CAN_DLC
     DLC_48,
     DLC_64
 };
-# 40 "mcc_generated_files/can/src/../can1.h" 2
-
+# 41 "mcc_generated_files/can/src/../can1.h" 2
 # 1 "mcc_generated_files/can/src/../can_interface.h" 1
 # 46 "mcc_generated_files/can/src/../can_interface.h"
 struct CAN_INTERFACE
@@ -39555,8 +39551,7 @@ struct CAN_INTERFACE
     void (*Tasks)(void);
 
 };
-# 41 "mcc_generated_files/can/src/../can1.h" 2
-
+# 42 "mcc_generated_files/can/src/../can1.h" 2
 
 
 
@@ -39632,7 +39627,7 @@ void CAN1_Tasks(void);
 
 
 void CAN1_InformationISR(void);
-# 35 "mcc_generated_files/can/src/can1.c" 2
+# 36 "mcc_generated_files/can/src/can1.c" 2
 # 70 "mcc_generated_files/can/src/can1.c"
 struct CAN1_FIFOREG
 {

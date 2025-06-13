@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.46 build 20240104201356 
-                                                                                               Thu Jun 12 21:07:33 2025
+                                                                                               Fri Jun 13 09:55:56 2025
 
 Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1 
      1                           	processor	18F57Q84
@@ -74,29 +74,29 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
     60                           ; 
     61                           ; SFR Addresses
     62   000000                     
-    63 ;; Function _INT0_DefaultInterruptHandler is unused but had its address taken
+    63 ;; Function _CAN1_Deinitialize is unused but had its address taken
     64   000000                     
-    65 ;; Function _INT1_DefaultInterruptHandler is unused but had its address taken
+    65 ;; Function _CAN1_IsBusOff is unused but had its address taken
     66   000000                     
-    67 ;; Function _INT2_DefaultInterruptHandler is unused but had its address taken
+    67 ;; Function _CAN1_Sleep is unused but had its address taken
     68   000000                     
-    69 ;; Function _CAN1_Deinitialize is unused but had its address taken
+    69 ;; Function _CAN1_InvalidMessageCallbackRegister is unused but had its address taken
     70   000000                     
-    71 ;; Function _CAN1_IsBusOff is unused but had its address taken
+    71 ;; Function _CAN1_BusWakeUpActivityCallbackRegister is unused but had its address taken
     72   000000                     
-    73 ;; Function _CAN1_Sleep is unused but had its address taken
+    73 ;; Function _CAN1_BusErrorCallbackRegister is unused but had its address taken
     74   000000                     
-    75 ;; Function _CAN1_InvalidMessageCallbackRegister is unused but had its address taken
+    75 ;; Function _CAN1_ModeChangeCallbackRegister is unused but had its address taken
     76   000000                     
-    77 ;; Function _CAN1_BusWakeUpActivityCallbackRegister is unused but had its address taken
+    77 ;; Function _CAN1_SystemErrorCallbackRegister is unused but had its address taken
     78   000000                     
-    79 ;; Function _CAN1_BusErrorCallbackRegister is unused but had its address taken
+    79 ;; Function _CAN1_Tasks is unused but had its address taken
     80   000000                     
-    81 ;; Function _CAN1_ModeChangeCallbackRegister is unused but had its address taken
+    81 ;; Function _INT0_DefaultInterruptHandler is unused but had its address taken
     82   000000                     
-    83 ;; Function _CAN1_SystemErrorCallbackRegister is unused but had its address taken
+    83 ;; Function _INT1_DefaultInterruptHandler is unused but had its address taken
     84   000000                     
-    85 ;; Function _CAN1_Tasks is unused but had its address taken
+    85 ;; Function _INT2_DefaultInterruptHandler is unused but had its address taken
     86   000000                     
     87                           	psect	smallconst
     88   003700                     __psmallconst:
@@ -188,102 +188,102 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
    174   003750  01                 	db	1
    175   003751                     __end_of_FIFO:
    176                           	callstack 0
-   177   000000                     _C1CONU	set	258
-   178   000000                     _C1CONT	set	259
-   179   000000                     _IOCEF	set	1063
-   180   000000                     _IOCEN	set	1062
-   181   000000                     _IOCEP	set	1061
-   182   000000                     _IOCCF	set	1047
-   183   000000                     _IOCCN	set	1046
-   184   000000                     _IOCCP	set	1045
-   185   000000                     _IOCBF	set	1039
-   186   000000                     _IOCBN	set	1038
-   187   000000                     _IOCBP	set	1037
-   188   000000                     _IOCAF	set	1031
-   189   000000                     _IOCAN	set	1030
-   190   000000                     _IOCAP	set	1029
-   191   000000                     _INLVLE	set	1060
-   192   000000                     _INLVLC	set	1044
-   193   000000                     _INLVLB	set	1036
-   194   000000                     _INLVLA	set	1028
-   195   000000                     _SLRCONE	set	1059
-   196   000000                     _SLRCONC	set	1043
-   197   000000                     _SLRCONB	set	1035
-   198   000000                     _SLRCONA	set	1027
-   199   000000                     _WPUF	set	1065
-   200   000000                     _WPUE	set	1057
-   201   000000                     _WPUD	set	1049
-   202   000000                     _WPUC	set	1041
-   203   000000                     _WPUB	set	1033
-   204   000000                     _WPUA	set	1025
-   205   000000                     _ANSELF	set	1064
-   206   000000                     _ANSELD	set	1048
-   207   000000                     _ANSELC	set	1040
-   208   000000                     _ANSELB	set	1032
-   209   000000                     _ODCONF	set	1066
-   210   000000                     _ODCOND	set	1050
-   211   000000                     _ODCONC	set	1042
-   212   000000                     _ODCONB	set	1034
-   213   000000                     _OSCTUNE	set	176
-   214   000000                     _OSCFRQ	set	177
-   215   000000                     _OSCEN	set	179
+   177   000000                     _IOCEF	set	1063
+   178   000000                     _IOCEN	set	1062
+   179   000000                     _IOCEP	set	1061
+   180   000000                     _IOCCF	set	1047
+   181   000000                     _IOCCN	set	1046
+   182   000000                     _IOCCP	set	1045
+   183   000000                     _IOCBF	set	1039
+   184   000000                     _IOCBN	set	1038
+   185   000000                     _IOCBP	set	1037
+   186   000000                     _IOCAF	set	1031
+   187   000000                     _IOCAN	set	1030
+   188   000000                     _IOCAP	set	1029
+   189   000000                     _INLVLE	set	1060
+   190   000000                     _INLVLC	set	1044
+   191   000000                     _INLVLB	set	1036
+   192   000000                     _INLVLA	set	1028
+   193   000000                     _SLRCONE	set	1059
+   194   000000                     _SLRCONC	set	1043
+   195   000000                     _SLRCONB	set	1035
+   196   000000                     _SLRCONA	set	1027
+   197   000000                     _WPUF	set	1065
+   198   000000                     _WPUE	set	1057
+   199   000000                     _WPUD	set	1049
+   200   000000                     _WPUC	set	1041
+   201   000000                     _WPUB	set	1033
+   202   000000                     _WPUA	set	1025
+   203   000000                     _ANSELF	set	1064
+   204   000000                     _ANSELD	set	1048
+   205   000000                     _ANSELC	set	1040
+   206   000000                     _ANSELB	set	1032
+   207   000000                     _ODCONF	set	1066
+   208   000000                     _ODCOND	set	1050
+   209   000000                     _ODCONC	set	1042
+   210   000000                     _ODCONB	set	1034
+   211   000000                     _OSCTUNE	set	176
+   212   000000                     _OSCFRQ	set	177
+   213   000000                     _OSCEN	set	179
+   214   000000                     _C1CONU	set	258
+   215   000000                     _C1CONT	set	259
    216   000000                     _C1CONTbits	set	259
    217   000000                     _C1CONUbits	set	258
    218   000000                     _C1CONH	set	257
    219   000000                     _ACTCON	set	172
    220   000000                     _OSCCON1	set	173
-   221   000000                     _PIE0bits	set	1182
-   222   000000                     _PIR1bits	set	1199
-   223   000000                     _INTCON0bits	set	1238
-   224   000000                     _PIR6bits	set	1204
-   225   000000                     _PIR10bits	set	1208
-   226   000000                     _LATA	set	1214
-   227   000000                     _PIR0bits	set	1198
-   228   000000                     _OSCCON3	set	175
-   229   000000                     _C1CONL	set	256
-   230   000000                     _C1CONHbits	set	257
-   231   000000                     _C1NBTCFGL	set	260
-   232   000000                     _CANRXPPS	set	573
-   233   000000                     _RC4I2C	set	646
-   234   000000                     _RC3I2C	set	647
-   235   000000                     _RB2I2C	set	648
-   236   000000                     _RB1I2C	set	649
-   237   000000                     _ANSELA	set	1024
-   238   000000                     _ODCONA	set	1026
-   239   000000                     _FSCMCON	set	1112
-   240   000000                     _C1TXQCONL	set	336
-   241   000000                     _TRISA	set	1222
-   242   000000                     _LATF	set	1219
-   243   000000                     _LATE	set	1218
-   244   000000                     _LATD	set	1217
-   245   000000                     _LATC	set	1216
-   246   000000                     _LATB	set	1215
-   247   000000                     _INLVLD	set	1052
-   248   000000                     _SLRCOND	set	1051
-   249   000000                     _ANSELE	set	1056
-   250   000000                     _ODCONE	set	1058
-   251   000000                     _INLVLF	set	1068
-   252   000000                     _SLRCONF	set	1067
-   253   000000                     _TRISF	set	1227
-   254   000000                     _TRISE	set	1226
-   255   000000                     _TRISD	set	1225
-   256   000000                     _TRISC	set	1224
-   257   000000                     _TRISB	set	1223
-   258   000000                     _C1INTLbits	set	284
-   259   000000                     _C1INTHbits	set	285
-   260   000000                     _C1TDCT	set	271
-   261   000000                     _C1TDCU	set	270
-   262   000000                     _C1TDCH	set	269
-   263   000000                     _C1TDCL	set	268
-   264   000000                     _C1DBTCFGT	set	267
-   265   000000                     _C1DBTCFGU	set	266
-   266   000000                     _C1DBTCFGH	set	265
-   267   000000                     _C1DBTCFGL	set	264
-   268   000000                     _C1NBTCFGT	set	263
-   269   000000                     _C1NBTCFGU	set	262
-   270   000000                     _C1NBTCFGH	set	261
-   271   000000                     _C1INTTbits	set	287
-   272   000000                     _C1TRECUbits	set	310
+   221   000000                     _C1CONL	set	256
+   222   000000                     _C1CONHbits	set	257
+   223   000000                     _C1NBTCFGL	set	260
+   224   000000                     _C1TXQCONL	set	336
+   225   000000                     _CANRXPPS	set	573
+   226   000000                     _RC4I2C	set	646
+   227   000000                     _RC3I2C	set	647
+   228   000000                     _RB2I2C	set	648
+   229   000000                     _RB1I2C	set	649
+   230   000000                     _ANSELA	set	1024
+   231   000000                     _ODCONA	set	1026
+   232   000000                     _FSCMCON	set	1112
+   233   000000                     _PIE0bits	set	1182
+   234   000000                     _C1INTLbits	set	284
+   235   000000                     _C1INTHbits	set	285
+   236   000000                     _C1TDCT	set	271
+   237   000000                     _C1TDCU	set	270
+   238   000000                     _C1TDCH	set	269
+   239   000000                     _C1TDCL	set	268
+   240   000000                     _C1DBTCFGT	set	267
+   241   000000                     _C1DBTCFGU	set	266
+   242   000000                     _C1DBTCFGH	set	265
+   243   000000                     _C1DBTCFGL	set	264
+   244   000000                     _C1NBTCFGT	set	263
+   245   000000                     _C1NBTCFGU	set	262
+   246   000000                     _C1NBTCFGH	set	261
+   247   000000                     _C1INTTbits	set	287
+   248   000000                     _C1TRECUbits	set	310
+   249   000000                     _PIR0bits	set	1198
+   250   000000                     _PIR6bits	set	1204
+   251   000000                     _PIR1bits	set	1199
+   252   000000                     _INTCON0bits	set	1238
+   253   000000                     _PIR10bits	set	1208
+   254   000000                     _LATA	set	1214
+   255   000000                     _OSCCON3	set	175
+   256   000000                     _TRISA	set	1222
+   257   000000                     _LATF	set	1219
+   258   000000                     _LATE	set	1218
+   259   000000                     _LATD	set	1217
+   260   000000                     _LATC	set	1216
+   261   000000                     _LATB	set	1215
+   262   000000                     _INLVLD	set	1052
+   263   000000                     _SLRCOND	set	1051
+   264   000000                     _ANSELE	set	1056
+   265   000000                     _ODCONE	set	1058
+   266   000000                     _INLVLF	set	1068
+   267   000000                     _SLRCONF	set	1067
+   268   000000                     _TRISF	set	1227
+   269   000000                     _TRISE	set	1226
+   270   000000                     _TRISD	set	1225
+   271   000000                     _TRISC	set	1224
+   272   000000                     _TRISB	set	1223
    273   003751  00                 	db	0	; dummy byte at the end
    274   000000                     
    275                           ; #config settings
@@ -324,28 +324,28 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
    310                           	psect	bssCOMRAM
    311   000501                     __pbssCOMRAM:
    312                           	callstack 0
-   313   000501                     _CAN1_SystemErrorHandler:
+   313   000501                     _INT2_InterruptHandler:
    314                           	callstack 0
    315   000501                     	ds	3
-   316   000504                     _CAN1_ModeChangeHandler:
+   316   000504                     _INT1_InterruptHandler:
    317                           	callstack 0
    318   000504                     	ds	3
-   319   000507                     _CAN1_BusErrorHandler:
+   319   000507                     _INT0_InterruptHandler:
    320                           	callstack 0
    321   000507                     	ds	3
-   322   00050A                     _CAN1_BusWakeUpActivityHandler:
+   322   00050A                     _CAN1_SystemErrorHandler:
    323                           	callstack 0
    324   00050A                     	ds	3
-   325   00050D                     _CAN1_InvalidMessageHandler:
+   325   00050D                     _CAN1_ModeChangeHandler:
    326                           	callstack 0
    327   00050D                     	ds	3
-   328   000510                     _INT2_InterruptHandler:
+   328   000510                     _CAN1_BusErrorHandler:
    329                           	callstack 0
    330   000510                     	ds	3
-   331   000513                     _INT1_InterruptHandler:
+   331   000513                     _CAN1_BusWakeUpActivityHandler:
    332                           	callstack 0
    333   000513                     	ds	3
-   334   000516                     _INT0_InterruptHandler:
+   334   000516                     _CAN1_InvalidMessageHandler:
    335                           	callstack 0
    336   000516                     	ds	3
    337                           
@@ -384,7 +384,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
    370 ;; Auto vars:     Size  Location     Type
    371 ;;		None
    372 ;; Return value:  Size  Location     Type
-   373 ;;                  2  245[None  ] int 
+   373 ;;                  2  402[None  ] int 
    374 ;; Registers used:
    375 ;;		wreg, status,2, status,0, cstack
    376 ;; Tracked objects:
@@ -428,8 +428,8 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
    399   003A0A                     
    400                           ;main.c: 43:     SYSTEM_Initialize();
    401   003A0A  ECE7  F01C         	call	_SYSTEM_Initialize	;wreg free
-   402   003A0E                     l246:
-   403   003A0E  EF07  F01D         	goto	l246
+   402   003A0E                     l403:
+   403   003A0E  EF07  F01D         	goto	l403
    404   003A12  EF0D  F000         	goto	start
    405   003A16                     __end_of_main:
    406                           	callstack 0
@@ -959,9 +959,9 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
    867   0039E0                     
    868                           ;mcc_generated_files/system/src/interrupt.c: 164:     INT2_InterruptHandler = InterruptH
       +                          andler;
-   869   0039E0  C519  F510         	movff	INT2_SetInterruptHandler@InterruptHandler,_INT2_InterruptHandler
-   870   0039E4  C51A  F511         	movff	INT2_SetInterruptHandler@InterruptHandler+1,_INT2_InterruptHandler+1
-   871   0039E8  C51B  F512         	movff	INT2_SetInterruptHandler@InterruptHandler+2,_INT2_InterruptHandler+2
+   869   0039E0  C519  F501         	movff	INT2_SetInterruptHandler@InterruptHandler,_INT2_InterruptHandler
+   870   0039E4  C51A  F502         	movff	INT2_SetInterruptHandler@InterruptHandler+1,_INT2_InterruptHandler+1
+   871   0039E8  C51B  F503         	movff	INT2_SetInterruptHandler@InterruptHandler+2,_INT2_InterruptHandler+2
    872   0039EC  0012               	return		;funcret
    873   0039EE                     __end_of_INT2_SetInterruptHandler:
    874                           	callstack 0
@@ -1020,9 +1020,9 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
    912   0039EE                     
    913                           ;mcc_generated_files/system/src/interrupt.c: 138:     INT1_InterruptHandler = InterruptH
       +                          andler;
-   914   0039EE  C519  F513         	movff	INT1_SetInterruptHandler@InterruptHandler,_INT1_InterruptHandler
-   915   0039F2  C51A  F514         	movff	INT1_SetInterruptHandler@InterruptHandler+1,_INT1_InterruptHandler+1
-   916   0039F6  C51B  F515         	movff	INT1_SetInterruptHandler@InterruptHandler+2,_INT1_InterruptHandler+2
+   914   0039EE  C519  F504         	movff	INT1_SetInterruptHandler@InterruptHandler,_INT1_InterruptHandler
+   915   0039F2  C51A  F505         	movff	INT1_SetInterruptHandler@InterruptHandler+1,_INT1_InterruptHandler+1
+   916   0039F6  C51B  F506         	movff	INT1_SetInterruptHandler@InterruptHandler+2,_INT1_InterruptHandler+2
    917   0039FA  0012               	return		;funcret
    918   0039FC                     __end_of_INT1_SetInterruptHandler:
    919                           	callstack 0
@@ -1081,9 +1081,9 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
    957   0039FC                     
    958                           ;mcc_generated_files/system/src/interrupt.c: 112:     INT0_InterruptHandler = InterruptH
       +                          andler;
-   959   0039FC  C519  F516         	movff	INT0_SetInterruptHandler@InterruptHandler,_INT0_InterruptHandler
-   960   003A00  C51A  F517         	movff	INT0_SetInterruptHandler@InterruptHandler+1,_INT0_InterruptHandler+1
-   961   003A04  C51B  F518         	movff	INT0_SetInterruptHandler@InterruptHandler+2,_INT0_InterruptHandler+2
+   959   0039FC  C519  F507         	movff	INT0_SetInterruptHandler@InterruptHandler,_INT0_InterruptHandler
+   960   003A00  C51A  F508         	movff	INT0_SetInterruptHandler@InterruptHandler+1,_INT0_InterruptHandler+1
+   961   003A04  C51B  F509         	movff	INT0_SetInterruptHandler@InterruptHandler+2,_INT0_InterruptHandler+2
    962   003A08  0012               	return		;funcret
    963   003A0A                     __end_of_INT0_SetInterruptHandler:
    964                           	callstack 0
@@ -1249,7 +1249,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   1093   0038FA  EF81  F01C         	goto	u61
   1094   0038FE  EF83  F01C         	goto	u60
   1095   003902                     u61:
-  1096   003902  EF8F  F01C         	goto	l349
+  1096   003902  EF8F  F01C         	goto	l97
   1097   003906                     u60:
   1098   003906                     
   1099                           ;mcc_generated_files/can/src/can1.c: 171:     {;mcc_generated_files/can/src/can1.c: 173:
@@ -1278,7 +1278,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
       +                          _FD_MODE);
   1121   003918  0E00               	movlw	0
   1122   00391A  EC10  F01C         	call	_CAN1_OperationModeSet
-  1123   00391E                     l349:
+  1123   00391E                     l97:
   1124   00391E  0012               	return		;funcret
   1125   003920                     __end_of_CAN1_Initialize:
   1126                           	callstack 0
@@ -1356,14 +1356,14 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   1179   00382E  EF1B  F01C         	goto	u11
   1180   003832  EF1D  F01C         	goto	u10
   1181   003836                     u11:
-  1182   003836  EF2E  F01C         	goto	l1105
+  1182   003836  EF2E  F01C         	goto	l1099
   1183   00383A                     u10:
   1184   00383A  041A               	decf	CAN1_OperationModeSet@requestMode^(0+1280),w,c
   1185   00383C  B4D8               	btfsc	status,2,c
   1186   00383E  EF23  F01C         	goto	u21
   1187   003842  EF25  F01C         	goto	u20
   1188   003846                     u21:
-  1189   003846  EF2E  F01C         	goto	l1105
+  1189   003846  EF2E  F01C         	goto	l1099
   1190   00384A                     u20:
   1191   00384A  0E04               	movlw	4
   1192   00384C  181A               	xorwf	CAN1_OperationModeSet@requestMode^(0+1280),w,c
@@ -1371,9 +1371,9 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   1194   003850  EF2C  F01C         	goto	u31
   1195   003854  EF2E  F01C         	goto	u30
   1196   003858                     u31:
-  1197   003858  EF4E  F01C         	goto	l1111
+  1197   003858  EF4E  F01C         	goto	l1105
   1198   00385C                     u30:
-  1199   00385C                     l1105:
+  1199   00385C                     l1099:
   1200                           
   1201                           ;mcc_generated_files/can/src/can1.c: 228:     {;mcc_generated_files/can/src/can1.c: 229:
       +                                   C1CONTbits.REQOP = requestMode;
@@ -1386,8 +1386,8 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   1208                           
   1209                           ;mcc_generated_files/can/src/can1.c: 231:         while (C1CONUbits.OPMOD != requestMode
       +                          )
-  1210   003868  EF41  F01C         	goto	l1109
-  1211   00386C                     l360:
+  1210   003868  EF41  F01C         	goto	l1103
+  1211   00386C                     l108:
   1212                           
   1213                           ; BSR set to: 1
   1214                           ;mcc_generated_files/can/src/can1.c: 232:         {;mcc_generated_files/can/src/can1.c: 
@@ -1396,7 +1396,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   1216   00386E  EF3B  F01C         	goto	u41
   1217   003872  EF3D  F01C         	goto	u40
   1218   003876                     u41:
-  1219   003876  EF41  F01C         	goto	l1109
+  1219   003876  EF41  F01C         	goto	l1103
   1220   00387A                     u40:
   1221   00387A                     
   1222                           ; BSR set to: 1
@@ -1406,8 +1406,8 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   1225   00387C  6E19               	movwf	CAN1_OperationModeSet@status^(0+1280),c
   1226                           
   1227                           ;mcc_generated_files/can/src/can1.c: 237:                 break;
-  1228   00387E  EF50  F01C         	goto	l363
-  1229   003882                     l1109:
+  1228   00387E  EF50  F01C         	goto	l111
+  1229   003882                     l1103:
   1230                           
   1231                           ; BSR set to: 1
   1232                           ;mcc_generated_files/can/src/can1.c: 231:         while (C1CONUbits.OPMOD != requestMode
@@ -1420,16 +1420,16 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   1238   00388C  EF4A  F01C         	goto	u51
   1239   003890  EF4C  F01C         	goto	u50
   1240   003894                     u51:
-  1241   003894  EF36  F01C         	goto	l360
+  1241   003894  EF36  F01C         	goto	l108
   1242   003898                     u50:
-  1243   003898  EF50  F01C         	goto	l363
-  1244   00389C                     l1111:
+  1243   003898  EF50  F01C         	goto	l111
+  1244   00389C                     l1105:
   1245                           
   1246                           ;mcc_generated_files/can/src/can1.c: 242:     {;mcc_generated_files/can/src/can1.c: 243:
       +                                   status = CAN_OP_MODE_REQUEST_FAIL;
   1247   00389C  0E01               	movlw	1
   1248   00389E  6E19               	movwf	CAN1_OperationModeSet@status^(0+1280),c
-  1249   0038A0                     l363:
+  1249   0038A0                     l111:
   1250                           
   1251                           ;mcc_generated_files/can/src/can1.c: 246:     return status;
   1252   0038A0  5019               	movf	CAN1_OperationModeSet@status^(0+1280),w,c
@@ -1658,22 +1658,22 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   1430                           ;mcc_generated_files/system/src/interrupt.c: 83:     if(PIE0bits.CANIE == 1 && PIR0bits.
       +                          CANIF == 1)
   1431   003976  AC9E               	btfss	158,6,c	;volatile
-  1432   003978  EFC0  F01C         	goto	i2u8_41
-  1433   00397C  EFC2  F01C         	goto	i2u8_40
-  1434   003980                     i2u8_41:
-  1435   003980  EFCB  F01C         	goto	i2l48
-  1436   003984                     i2u8_40:
+  1432   003978  EFC0  F01C         	goto	i2u18_41
+  1433   00397C  EFC2  F01C         	goto	i2u18_40
+  1434   003980                     i2u18_41:
+  1435   003980  EFCB  F01C         	goto	i2l205
+  1436   003984                     i2u18_40:
   1437   003984  ACAE               	btfss	174,6,c	;volatile
-  1438   003986  EFC7  F01C         	goto	i2u9_41
-  1439   00398A  EFC9  F01C         	goto	i2u9_40
-  1440   00398E                     i2u9_41:
-  1441   00398E  EFCB  F01C         	goto	i2l48
-  1442   003992                     i2u9_40:
+  1438   003986  EFC7  F01C         	goto	i2u19_41
+  1439   00398A  EFC9  F01C         	goto	i2u19_40
+  1440   00398E                     i2u19_41:
+  1441   00398E  EFCB  F01C         	goto	i2l205
+  1442   003992                     i2u19_40:
   1443   003992                     
   1444                           ;mcc_generated_files/system/src/interrupt.c: 84:     {;mcc_generated_files/system/src/in
       +                          terrupt.c: 85:         CAN1_InformationISR();
   1445   003992  ECDC  F01C         	call	_CAN1_InformationISR	;wreg free
-  1446   003996                     i2l48:
+  1446   003996                     i2l205:
   1447   003996  0011               	retfie		f
   1448   003998                     __end_of_INTERRUPT_InterruptManager:
   1449                           	callstack 0
@@ -1734,13 +1734,13 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   1489   0039BC  EFE2  F01C         	goto	i2u7_41
   1490   0039C0  EFE4  F01C         	goto	i2u7_40
   1491   0039C4                     i2u7_41:
-  1492   0039C4  EFE5  F01C         	goto	i2l396
+  1492   0039C4  EFE5  F01C         	goto	i2l144
   1493   0039C8                     i2u7_40:
   1494   0039C8                     
   1495                           ; BSR set to: 1
   1496                           ;mcc_generated_files/can/src/can1.c: 323:         C1INTHbits.WAKIF = 0;
   1497   0039C8  9D1D               	bcf	29,6,b	;volatile
-  1498   0039CA                     i2l396:
+  1498   0039CA                     i2l144:
   1499                           
   1500                           ; BSR set to: 1
   1501                           ;mcc_generated_files/can/src/can1.c: 326:     PIR0bits.CANIF = 0;
@@ -2255,7 +2255,7 @@ Pointer List with Targets:
 		 -> NULL(), 
 
     FIFO	const PTR volatile struct CAN1_FIFOREG size(2) Largest target is 1
-		 -> C1TXQCONL(BITBIGSFRlllhhhllllllll[1]), 
+		 -> C1TXQCONL(BITBIGSFRllll[1]), 
 
     INT0_InterruptHandler	PTR FTN()void  size(3) Largest target is 1
 		 -> INT0_DefaultInterruptHandler(), NULL(), 
@@ -2275,92 +2275,94 @@ Pointer List with Targets:
     INT2_SetInterruptHandler@InterruptHandler	PTR FTN()void  size(3) Largest target is 1
 		 -> INT2_DefaultInterruptHandler(), 
 
-    S452$18$0	PTR FTN()void  size(3) Largest target is 0
+    NULL$1	PTR struct CAN_MSG_OBJ size(2) Largest target is 0
 
-    S452$19$0	PTR FTN()void  size(3) Largest target is 0
+    S92$18$0	PTR FTN()void  size(3) Largest target is 0
 
-    S452$20$0	PTR FTN()void  size(3) Largest target is 0
+    S92$19$0	PTR FTN()void  size(3) Largest target is 0
 
-    S452$21$0	PTR FTN()void  size(3) Largest target is 0
+    S92$20$0	PTR FTN()void  size(3) Largest target is 0
 
-    S452$22$0	PTR FTN()void  size(3) Largest target is 0
+    S92$21$0	PTR FTN()void  size(3) Largest target is 0
 
-    S452CAN_INTERFACE$BusErrorCallbackRegister	PTR FTN(PTR FTN()void ,)void  size(3) Largest target is 1
+    S92$22$0	PTR FTN()void  size(3) Largest target is 0
+
+    S92CAN_INTERFACE$BusErrorCallbackRegister	PTR FTN(PTR FTN()void ,)void  size(3) Largest target is 1
 		 -> CAN1_BusErrorCallbackRegister(), 
 
-    S452CAN_INTERFACE$BusWakeUpActivityCallbackRegister	PTR FTN(PTR FTN()void ,)void  size(3) Largest target is 1
+    S92CAN_INTERFACE$BusWakeUpActivityCallbackRegister	PTR FTN(PTR FTN()void ,)void  size(3) Largest target is 1
 		 -> CAN1_BusWakeUpActivityCallbackRegister(), 
 
-    S452CAN_INTERFACE$Deinitialize	PTR FTN()void  size(3) Largest target is 1
+    S92CAN_INTERFACE$Deinitialize	PTR FTN()void  size(3) Largest target is 1
 		 -> CAN1_Deinitialize(), 
 
-    S452CAN_INTERFACE$Initialize	PTR FTN()void  size(3) Largest target is 1
+    S92CAN_INTERFACE$Initialize	PTR FTN()void  size(3) Largest target is 1
 		 -> CAN1_Initialize(), 
 
-    S452CAN_INTERFACE$InvalidMessageCallbackRegister	PTR FTN(PTR FTN()void ,)void  size(3) Largest target is 1
+    S92CAN_INTERFACE$InvalidMessageCallbackRegister	PTR FTN(PTR FTN()void ,)void  size(3) Largest target is 1
 		 -> CAN1_InvalidMessageCallbackRegister(), 
 
-    S452CAN_INTERFACE$IsBusOff	PTR FTN()_Bool  size(3) Largest target is 1
+    S92CAN_INTERFACE$IsBusOff	PTR FTN()_Bool  size(3) Largest target is 1
 		 -> CAN1_IsBusOff(), 
 
-    S452CAN_INTERFACE$IsRxErrorActive	PTR FTN()_Bool  size(3) Largest target is 1
+    S92CAN_INTERFACE$IsRxErrorActive	PTR FTN()_Bool  size(3) Largest target is 1
 		 -> NULL(), 
 
-    S452CAN_INTERFACE$IsRxErrorPassive	PTR FTN()_Bool  size(3) Largest target is 1
+    S92CAN_INTERFACE$IsRxErrorPassive	PTR FTN()_Bool  size(3) Largest target is 1
 		 -> NULL(), 
 
-    S452CAN_INTERFACE$IsRxErrorWarning	PTR FTN()_Bool  size(3) Largest target is 1
+    S92CAN_INTERFACE$IsRxErrorWarning	PTR FTN()_Bool  size(3) Largest target is 1
 		 -> NULL(), 
 
-    S452CAN_INTERFACE$IsTxErrorActive	PTR FTN()_Bool  size(3) Largest target is 1
+    S92CAN_INTERFACE$IsTxErrorActive	PTR FTN()_Bool  size(3) Largest target is 1
 		 -> NULL(), 
 
-    S452CAN_INTERFACE$IsTxErrorPassive	PTR FTN()_Bool  size(3) Largest target is 1
+    S92CAN_INTERFACE$IsTxErrorPassive	PTR FTN()_Bool  size(3) Largest target is 1
 		 -> NULL(), 
 
-    S452CAN_INTERFACE$IsTxErrorWarning	PTR FTN()_Bool  size(3) Largest target is 1
+    S92CAN_INTERFACE$IsTxErrorWarning	PTR FTN()_Bool  size(3) Largest target is 1
 		 -> NULL(), 
 
-    S452CAN_INTERFACE$ModeChangeCallbackRegister	PTR FTN(PTR FTN()void ,)void  size(3) Largest target is 1
+    S92CAN_INTERFACE$ModeChangeCallbackRegister	PTR FTN(PTR FTN()void ,)void  size(3) Largest target is 1
 		 -> CAN1_ModeChangeCallbackRegister(), 
 
-    S452CAN_INTERFACE$OperationModeGet	PTR FTN()enum E23392 size(3) Largest target is 1
+    S92CAN_INTERFACE$OperationModeGet	PTR FTN()enum E23392 size(3) Largest target is 1
 		 -> CAN1_OperationModeGet(), 
 
-    S452CAN_INTERFACE$OperationModeSet	PTR FTN(const enum E23392,)enum E23401 size(3) Largest target is 1
+    S92CAN_INTERFACE$OperationModeSet	PTR FTN(const enum E23392,)enum E23401 size(3) Largest target is 1
 		 -> CAN1_OperationModeSet(), 
 
-    S452CAN_INTERFACE$Receive	PTR FTN(PTR struct CAN_MSG_OBJ,)_Bool  size(3) Largest target is 1
+    S92CAN_INTERFACE$Receive	PTR FTN(PTR struct CAN_MSG_OBJ,)_Bool  size(3) Largest target is 1
 		 -> NULL(), 
 
-    S452CAN_INTERFACE$ReceivedMessageCountGet	PTR FTN()unsigned char  size(3) Largest target is 1
+    S92CAN_INTERFACE$ReceivedMessageCountGet	PTR FTN()unsigned char  size(3) Largest target is 1
 		 -> NULL(), 
 
-    S452CAN_INTERFACE$ReceiveFIFOStatusGet	PTR FTN(const enum E23363,)unsigned char  size(3) Largest target is 1
+    S92CAN_INTERFACE$ReceiveFIFOStatusGet	PTR FTN(const enum E23363,)unsigned char  size(3) Largest target is 1
 		 -> NULL(), 
 
-    S452CAN_INTERFACE$ReceiveMessageGet	PTR FTN(const enum E23363,PTR struct CAN_MSG_OBJ,)_Bool  size(3) Largest target is 1
+    S92CAN_INTERFACE$ReceiveMessageGet	PTR FTN(const enum E23363,PTR struct CAN_MSG_OBJ,)_Bool  size(3) Largest target is 1
 		 -> NULL(), 
 
-    S452CAN_INTERFACE$RxBufferOverFlowCallbackRegister	PTR FTN(PTR FTN()void ,)void  size(3) Largest target is 1
+    S92CAN_INTERFACE$RxBufferOverFlowCallbackRegister	PTR FTN(PTR FTN()void ,)void  size(3) Largest target is 1
 		 -> NULL(), 
 
-    S452CAN_INTERFACE$SleepMode	PTR FTN()void  size(3) Largest target is 1
+    S92CAN_INTERFACE$SleepMode	PTR FTN()void  size(3) Largest target is 1
 		 -> CAN1_Sleep(), 
 
-    S452CAN_INTERFACE$SystemErrorCallbackRegister	PTR FTN(PTR FTN()void ,)void  size(3) Largest target is 1
+    S92CAN_INTERFACE$SystemErrorCallbackRegister	PTR FTN(PTR FTN()void ,)void  size(3) Largest target is 1
 		 -> CAN1_SystemErrorCallbackRegister(), 
 
-    S452CAN_INTERFACE$Tasks	PTR FTN()void  size(3) Largest target is 1
+    S92CAN_INTERFACE$Tasks	PTR FTN()void  size(3) Largest target is 1
 		 -> CAN1_Tasks(), 
 
-    S452CAN_INTERFACE$Transmit	PTR FTN(const enum E23361,PTR struct CAN_MSG_OBJ,)enum E23387 size(3) Largest target is 1
+    S92CAN_INTERFACE$Transmit	PTR FTN(const enum E23361,PTR struct CAN_MSG_OBJ,)enum E23387 size(3) Largest target is 1
 		 -> NULL(), 
 
-    S452CAN_INTERFACE$TransmitFIFOStatusGet	PTR FTN(const enum E23361,)enum E23405 size(3) Largest target is 1
+    S92CAN_INTERFACE$TransmitFIFOStatusGet	PTR FTN(const enum E23361,)enum E23405 size(3) Largest target is 1
 		 -> NULL(), 
 
-    S452CAN_INTERFACE$TxAttemptCallbackRegister	PTR FTN(PTR FTN()void ,)void  size(3) Largest target is 1
+    S92CAN_INTERFACE$TxAttemptCallbackRegister	PTR FTN(PTR FTN()void ,)void  size(3) Largest target is 1
 		 -> NULL(), 
 
 
@@ -2854,7 +2856,7 @@ Name               Size   Autos  Total    Cost      Usage
 BIGRAM            31FF      0       0     105        0.0%
 BITBIGSFR_1        900      0       0     104        0.0%
 EEDATA             400      0       0       0        0.0%
-BITBIGSFRlllhhh    176      0       0     116        0.0%
+BITBIGSFRhllllh    176      0       0     116        0.0%
 BITBANK54          100      0       0     102        0.0%
 BANK54             100      0       0     103        0.0%
 BITBANK53          100      0       0     100        0.0%
@@ -2953,30 +2955,30 @@ BITBANK7           100      0       0       8        0.0%
 BANK7              100      0       0       9        0.0%
 BITBANK6           100      0       0       6        0.0%
 BANK6              100      0       0       7        0.0%
-BITBIGSFRlllhhh     EC      0       0     118        0.0%
+BITBIGSFRhlllll     EC      0       0     118        0.0%
 BITBIGSFRllll       AC      0       0     126        0.0%
 BITBANK5            A0      0       0       4        0.0%
 BANK5               A0      0       0       5        0.0%
 BITCOMRAM           5F      0       0       0        0.0%
 COMRAM              5F      3      1B       1       28.4%
 BITBIGSFRlllhhh     4C      0       0     123        0.0%
-BITBIGSFRlllhhh     48      0       0     117        0.0%
-BITBIGSFRlllhhh     45      0       0     113        0.0%
-BITBIGSFRlllhhh     2B      0       0     114        0.0%
-BITBIGSFRh          29      0       0     106        0.0%
-BITBIGSFRlllhhh     19      0       0     119        0.0%
-BITBIGSFRlllhhh     16      0       0     120        0.0%
-BITBIGSFRllh         F      0       0     112        0.0%
-BITBIGSFRlllhhh      C      0       0     122        0.0%
-BITBIGSFRlhhhhh      A      0       0     107        0.0%
-BITBIGSFRlhhhl       5      0       0     109        0.0%
-BITBIGSFRlhl         4      0       0     111        0.0%
-BITBIGSFRlllhhh      3      0       0     115        0.0%
-BITBIGSFRlhhl        3      0       0     110        0.0%
-BITBIGSFRlhhhhl      2      0       0     108        0.0%
-BITBIGSFRlllhhh      1      0       0     121        0.0%
+BITBIGSFRhlllll     48      0       0     117        0.0%
+BITBIGSFRhlh        45      0       0     113        0.0%
+BITBIGSFRhllhhh     2B      0       0     114        0.0%
+BITBIGSFRhhhh       29      0       0     106        0.0%
+BITBIGSFRlhhh       19      0       0     119        0.0%
+BITBIGSFRlhhlh      16      0       0     120        0.0%
+BITBIGSFRhhl         F      0       0     112        0.0%
+BITBIGSFRlhl         C      0       0     122        0.0%
+BITBIGSFRhhhlhh      A      0       0     107        0.0%
+BITBIGSFRhhhlhh      5      0       0     109        0.0%
+BITBIGSFRhhhll       4      0       0     111        0.0%
+BITBIGSFRhllhhh      3      0       0     115        0.0%
+BITBIGSFRhhhlhl      3      0       0     110        0.0%
+BITBIGSFRhhhlhh      2      0       0     108        0.0%
 BITBIGSFRlllhhl      1      0       0     124        0.0%
 BITBIGSFRlllhl       1      0       0     125        0.0%
+BITBIGSFRlhhll       1      0       0     121        0.0%
 BIGSFR_1             0      0       0     200        0.0%
 BIGSFR               0      0       0     200        0.0%
 BITSFR_14            0      0       0     200        0.0%
@@ -3017,46 +3019,46 @@ CODE                 0      0       0       0        0.0%
 
 
 Microchip Technology PIC18 Macro Assembler V2.46 build 20240104201356 
-Symbol Table                                                                                   Thu Jun 12 21:07:33 2025
+Symbol Table                                                                                   Fri Jun 13 09:55:56 2025
 
-                                      l41 38E2                                        l71 39FA  
-                                      l58 3A08                                        l84 39EC  
-                                      l98 39DE                                        u10 383A  
-                                      u11 3836                                        u20 384A  
-                                      u21 3846                                        u30 385C  
-                                      u31 3858                                        u40 387A  
-                                      u41 3876                                        u50 3898  
-                                      u51 3894                                        u60 3906  
-                                      u61 3902                                       l115 3974  
-                                     l236 381E                                       l246 3A0E  
-                                     l247 3A0E                                       l360 386C  
-                                     l345 3952                                       l363 38A0  
-                                     l364 38A2                                       l349 391E  
-                                     l367 3A1E    _CAN1_BusWakeUpActivityCallbackRegister 0000  
+                                      l93 3952                                        l97 391E  
+                                      u10 383A                                        u11 3836  
+                                      u20 384A                                        u21 3846  
+                                      u30 385C                                        u31 3858  
+                                      u40 387A                                        u41 3876  
+                                      u50 3898                                        u51 3894  
+                                      u60 3906                                        u61 3902  
+                                     l111 38A0                                       l112 38A2  
+                                     l115 3A1E                                       l108 386C  
+                                     l215 3A08                                       l241 39EC  
+                                     l403 3A0E                                       l228 39FA  
+                                     l404 3A0E                                       l255 39DE  
+                                     l272 3974                                       l198 38E2  
+                                     l393 381E    _CAN1_BusWakeUpActivityCallbackRegister 0000  
               ??_INT0_SetInterruptHandler 051C                           __end_of_CAN_FD1 374F  
-                                     wreg 04E8                _CAN1_InvalidMessageHandler 050D  
-                                    l1101 383A                                      l1111 389C  
-                                    l1103 384A                                      l1105 385C  
-                                    l1107 387A                                      l1131 3784  
-                                    l1109 3882                                      l1141 3792  
-                                    l1133 3786                                      l1127 3954  
-                                    l1151 37BC                                      l1143 3798  
-                                    l1135 3788                                      l1161 37CA  
-                                    l1153 37BE                                      l1145 379A  
-                                    l1137 378A                                      l1129 3752  
-                                    l1171 38E8                                      l1163 37CC  
-                                    l1155 37C0                                      l1147 37A0  
-                                    l1139 3790                                      l1085 3A16  
-                                    l1181 3914                                      l1173 38F0  
-                                    l1165 37CE                                      l1157 37C6  
-                                    l1149 37BA                                      l1095 3920  
-                                    l1183 3918                                      l1175 3906  
-                                    l1271 39FC                                      l1167 37D4  
-                                    l1159 37C8                                      l1097 3822  
-                                    l1177 3910                                      l1169 38E4  
+                                     wreg 04E8                _CAN1_InvalidMessageHandler 0516  
+                                    l1101 387A                                      l1103 3882  
+                                    l1105 389C                                      l1121 3906  
+                                    l1123 3910                                      l1115 38E4  
+                                    l1125 3912                                      l1117 38E8  
+                                    l1127 3914                                      l1119 38F0  
+                                    l1143 3954                                      l1151 3788  
+                                    l1129 3918                                      l1161 379A  
+                                    l1153 378A                                      l1145 3752  
+                                    l1091 3822                                      l1171 37C0  
+                                    l1163 37A0                                      l1155 3790  
+                                    l1147 3784                                      l1085 3A16  
+                                    l1093 3826                                      l1181 37CE  
+                                    l1173 37C6                                      l1165 37BA  
+                                    l1157 3792                                      l1149 3786  
+                                    l1095 383A                                      l1271 39FC  
+                                    l1183 37D4                                      l1175 37C8  
+                                    l1167 37BC                                      l1159 3798  
+                                    l1089 3920                                      l1097 384A  
                                     l1273 39EE                                      l1281 38BA  
-                                    l1099 3826                                      l1179 3912  
-                                    l1275 39E0                                      l1283 38BC  
+                                    l1177 37CA                                      l1169 37BE  
+                                    l1099 385C                                      l1275 39E0  
+                                    l1283 38BC                                      l1179 37CC  
                                     l1291 39D6                                      l1285 38CE  
                                     l1277 38A4                                      l1293 39DA  
                                     l1287 38D0                                      l1279 38AA  
@@ -3064,20 +3066,20 @@ Symbol Table                                                                    
                                     _FIFO 374F                                      _LATA 04BE  
                                     _LATB 04BF                                      _LATC 04C0  
                                     _LATD 04C1                                      _LATE 04C2  
-                                    _LATF 04C3                                      i2l48 3996  
-                                    _WPUA 0401                                      _WPUB 0409  
-                                    _WPUC 0411                                      _WPUD 0419  
-                                    _WPUE 0421                                      _WPUF 0429  
-                                    _main 3A0A                 ?_INT2_SetInterruptHandler 0519  
-                                    start 001A                              ___param_bank 0000  
-                                   ?_main 0519                                     _IOCAF 0407  
-                                   _IOCBF 040F                                     _IOCCF 0417  
-                                   _IOCAN 0406                                     _IOCEF 0427  
-                                   _IOCAP 0405                                     _IOCBN 040E  
-                                   _IOCBP 040D                                     _IOCCN 0416  
-                                   _IOCCP 0415                                     _IOCEN 0426  
-                                   _IOCEP 0425                                     i2l396 39CA  
-                                   i2l397 39C8                                     i2l398 39CC  
+                                    _LATF 04C3                                      _WPUA 0401  
+                                    _WPUB 0409                                      _WPUC 0411  
+                                    _WPUD 0419                                      _WPUE 0421  
+                                    _WPUF 0429                                      _main 3A0A  
+               ?_INT2_SetInterruptHandler 0519                                      start 001A  
+                            ___param_bank 0000                                     ?_main 0519  
+                                   _IOCAF 0407                                     _IOCBF 040F  
+                                   _IOCCF 0417                                     _IOCAN 0406  
+                                   _IOCEF 0427                                     _IOCAP 0405  
+                                   _IOCBN 040E                                     _IOCBP 040D  
+                                   _IOCCN 0416                                     _IOCCP 0415  
+                                   _IOCEN 0426                                     _IOCEP 0425  
+                                   i2l205 3996                                     i2l144 39CA  
+                                   i2l145 39C8                                     i2l146 39CC  
                                    _OSCEN 00B3                                     _TRISA 04C6  
                                    _TRISB 04C7                                     _TRISC 04C8  
                                    _TRISD 04C9                                     _TRISE 04CA  
@@ -3099,38 +3101,38 @@ Symbol Table                                                                    
                                   _ODCONA 0402                                    _ODCONB 040A  
                                   _ODCONC 0412                                    _ODCOND 041A  
                                   _ODCONE 0422                                    _ODCONF 042A  
-                                  i2l1185 39B8                                    i2l1195 3976  
-                                  i2l1197 3984                                    i2l1199 3992  
+                                  i2l1241 3984                                    i2l1243 3992  
+                                  i2l1239 3976                                    i2l1185 39B8  
                                   _INLVLA 0404                                    _INLVLB 040C  
                                   _INLVLC 0414                                    _INLVLD 041C  
                                   _INLVLE 0424                                    _INLVLF 042C  
                  ??_CAN1_OperationModeGet 0519                                    _OSCFRQ 00B1  
                  ??_CAN1_OperationModeSet 0519                                    i2u7_40 39C8  
-                                  i2u7_41 39C4                                    i2u8_40 3984  
-                                  i2u8_41 3980                                    i2u9_40 3992  
-                                  i2u9_41 398E               ??_CAN1_BitRateConfiguration 0519  
+                                  i2u7_41 39C4               ??_CAN1_BitRateConfiguration 0519  
                                   clear_0 399E                                    isa$std 0001  
                        ?_CLOCK_Initialize 0519              _INT2_DefaultInterruptHandler 0000  
                       ??_CLOCK_Initialize 0519                              __mediumconst 0000  
 INT2_SetInterruptHandler@InterruptHandler 0519  INT1_SetInterruptHandler@InterruptHandler 0519  
 INT0_SetInterruptHandler@InterruptHandler 0519                         _SYSTEM_Initialize 39CE  
                               __accesstop 0560                   __end_of__initialization 39B2  
-                       ??_CAN1_Initialize 051B                      _CAN1_BusErrorHandler 0507  
+                       ??_CAN1_Initialize 051B                      _CAN1_BusErrorHandler 0510  
              __end_of_CAN1_InformationISR 39CE                        ?_SYSTEM_Initialize 0519  
-                           ___rparam_used 0001                    _CAN1_ModeChangeHandler 0504  
+                           ___rparam_used 0001                    _CAN1_ModeChangeHandler 050D  
                           __pcstackCOMRAM 0519                       ??_SYSTEM_Initialize 051C  
                _CAN1_BitRateConfiguration 3920          __end_of_INT2_SetInterruptHandler 39EE  
-               __end_of_SYSTEM_Initialize 39E0                     _INT0_InterruptHandler 0516  
+               __end_of_SYSTEM_Initialize 39E0                     _INT0_InterruptHandler 0507  
                                  IVTBASEH 045E                                   IVTBASEL 045D  
                                  IVTBASEU 045F             _CAN1_BusErrorCallbackRegister 0000  
                                _C1DBTCFGH 0109                                 _C1DBTCFGL 0108  
                                _C1DBTCFGT 010B                                 _C1DBTCFGU 010A  
-           _CAN1_BusWakeUpActivityHandler 050A                                   _CAN_FD1 3701  
+           _CAN1_BusWakeUpActivityHandler 0513                                   _CAN_FD1 3701  
                                _C1NBTCFGH 0105                                 _C1NBTCFGL 0104  
                                _C1NBTCFGT 0107                                 _C1NBTCFGU 0106  
                                  _FSCMCON 0458                ??_INT1_SetInterruptHandler 051C  
                                  _OSCCON1 00AD                                   _OSCCON3 00AF  
-                               _C1TXQCONL 0150                                   _OSCTUNE 00B0  
+                               _C1TXQCONL 0150                                   i2u18_40 3984  
+                                 i2u18_41 3980                                   i2u19_40 3992  
+                                 i2u19_41 398E                                   _OSCTUNE 00B0  
                                  _SLRCONA 0403                                   _SLRCONB 040B  
                                  _SLRCONC 0413                                   _SLRCOND 041B  
                                  _SLRCONE 0423                                   _SLRCONF 042B  
@@ -3146,12 +3148,12 @@ INT0_SetInterruptHandler@InterruptHandler 0519                         _SYSTEM_I
                 _INT2_SetInterruptHandler 39E0                                 _PIR10bits 04B8  
                              _C1TRECUbits 0136             __end_of_CAN1_OperationModeGet 3A20  
            __end_of_CAN1_OperationModeSet 38A4                                   postinc0 04EE  
-                   _INT1_InterruptHandler 0513                           _CAN1_Initialize 38E4  
+                   _INT1_InterruptHandler 0504                           _CAN1_Initialize 38E4  
             __end_of_INTERRUPT_Initialize 38E4              _INT0_DefaultInterruptHandler 0000  
                      start_initialization 3998                                ivt0x8_base 0008  
                  __end_of_CAN1_Initialize 3920                               __pbssCOMRAM 0501  
         __end_of_INT0_SetInterruptHandler 3A0A                         _CAN1_Deinitialize 0000  
-                   _INT2_InterruptHandler 0510                    _PIN_MANAGER_Initialize 3752  
+                   _INT2_InterruptHandler 0501                    _PIN_MANAGER_Initialize 3752  
             ??_INTERRUPT_InterruptManager 0519                               __smallconst 3700  
               ??_INT2_SetInterruptHandler 051C                                _C1CONHbits 0101  
         CAN1_OperationModeSet@requestMode 051A                                  _CANRXPPS 023D  
@@ -3166,7 +3168,7 @@ INT0_SetInterruptHandler@InterruptHandler 0519                         _SYSTEM_I
                    ?_INTERRUPT_Initialize 0519                  _INT0_SetInterruptHandler 39FC  
                                 __Hrparam 0000           _CAN1_ModeChangeCallbackRegister 0000  
                    _CAN1_OperationModeGet 3A16                                  __Lrparam 0000  
-                   _CAN1_OperationModeSet 3820                   _CAN1_SystemErrorHandler 0501  
+                   _CAN1_OperationModeSet 3820                   _CAN1_SystemErrorHandler 050A  
                                 __pivt0x8 0008                                  __ptext10 3A16  
                                 __ptext11 3920                                  __ptext12 3976  
                                 __ptext13 39B8                       _CAN1_InformationISR 39B8  

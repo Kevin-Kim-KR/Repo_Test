@@ -39228,13 +39228,11 @@ __attribute__((__unsupported__("The READTIMER" "0" "() macro is not available wi
 unsigned char __t1rd16on(void);
 unsigned char __t3rd16on(void);
 # 33 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\xc.h" 2 3
-# 36 "mcc_generated_files/system/src/clock.c" 2
-
+# 37 "mcc_generated_files/system/src/clock.c" 2
 # 1 "mcc_generated_files/system/src/../clock.h" 1
 # 56 "mcc_generated_files/system/src/../clock.h"
 void CLOCK_Initialize(void);
-# 37 "mcc_generated_files/system/src/clock.c" 2
-
+# 38 "mcc_generated_files/system/src/clock.c" 2
 
 void CLOCK_Initialize(void)
 {
